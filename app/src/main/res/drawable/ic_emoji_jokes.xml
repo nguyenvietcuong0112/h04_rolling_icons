@@ -1,0 +1,35 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Star Points -->
+    <path
+        android:pathData="M12,2L14.8,8.2L21.5,8.8L16.4,13.2L17.9,19.8L12,16.3L6.1,19.8L7.6,13.2L2.5,8.8L9.2,8.2Z"
+        android:fillColor="#F5D8B3"
+        android:strokeColor="#2E1C0C"
+        android:strokeWidth="1.5"
+        android:strokeLineJoin="round"/>
+    <!-- Wink Eyes -->
+    <path
+        android:pathData="M9,10.5C9.5,9.8 10.5,9.8 11,10.5"
+        android:strokeColor="#2E1C0C"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M13,10.5C13.5,9.8 14.5,9.8 15,10.5"
+        android:strokeColor="#2E1C0C"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"/>
+    <!-- Terracotta Cheeks -->
+    <path
+        android:pathData="M7.5,12.5m-0.8,0a0.8,0.8 0,1 1,1.6 0a0.8,0.8 0,1 1,-1.6 0"
+        android:fillColor="#C85C32"/>
+    <path
+        android:pathData="M16.5,12.5m-0.8,0a0.8,0.8 0,1 1,1.6 0a0.8,0.8 0,1 1,-1.6 0"
+        android:fillColor="#C85C32"/>
+    <!-- Laughing Mouth -->
+    <path
+        android:pathData="M10,13C10,14.5 11,15 12,15C13,15 14,14.5 14,13Z"
+        android:fillColor="#2E1C0C"/>
+</vector>

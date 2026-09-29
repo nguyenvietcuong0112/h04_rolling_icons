@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cosmic_background"
+    android:fitsSystemWindows="false">
+
+    <!-- Cosmic Header Container -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_125"
+        android:background="@drawable/bg_header"
+        android:paddingTop="24dp">
+
+        <!-- Top Title Bar -->
+        <RelativeLayout
+            android:id="@+id/layoutTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingHorizontal="16dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/txtHeaderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/rolling_icon_title"
+                android:textColor="@color/cosmic_white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/app_font" />
+        </RelativeLayout>
+
+        <!-- Main Tabs -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_below="@id/layoutTitleBar"
+            android:background="@android:color/transparent"
+            android:layout_marginHorizontal="@dimen/dp_40"
+            app:tabTextColor="#B4A6FF"
+            app:tabSelectedTextColor="@color/cosmic_white"
+            app:tabIndicatorColor="@color/cosmic_white"
+            app:tabIndicatorHeight="4dp"
+            app:tabIndicator="@drawable/bg_tab_indicator"
+            app:tabIndicatorFullWidth="false"
+            app:tabTextAppearance="@style/CustomTabTextAppearance"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabRippleColor="#20FFFFFF" />
+
+    </RelativeLayout>
+
+    <!-- Container for Tab Contents -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Tab 1: Apps Content Layout -->
+        <LinearLayout
+            android:id="@+id/layoutTabApps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp">
+
+                <EditText
+                    android:id="@+id/appSearchEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/cosmic_text_primary"
+                    android:textColorHint="@color/cosmic_text_secondary"
+                    android:background="@drawable/bg_search_bar"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="40dp"
+                    android:hint="@string/search_apps_hint"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/cosmic_accent"
+                    android:fontFamily="@font/app_font" />
+
+                <ImageView
+                    android:id="@+id/appSearchClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="12dp"
+                    android:padding="8dp"
+                    android:src="@drawable/app_picker_search_edit_clear"
+                    android:visibility="gone"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:tint="@color/cosmic_accent" />
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/appRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="8dp"
+                android:clipToPadding="false"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+
+        <!-- Tab 2: Emojis Content Layout -->
+        <LinearLayout
+            android:id="@+id/layoutTabEmojis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- Sub Category Tabs for Emojis -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_emoji_tab_container"
+                android:layout_margin="12dp"
+                android:padding="3dp">
+
+                <ImageView
+                    android:id="@+id/emojiTabSmileys"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_emoji_smileys"
+                    android:background="@drawable/bg_emoji_tab_selected"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <ImageView
+                    android:id="@+id/emojiTabAnimals"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_emoji_animals"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:alpha="0.55" />
+
+                <ImageView
+                    android:id="@+id/emojiTabLove"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_emoji_love"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:alpha="0.55" />
+
+                <ImageView
+                    android:id="@+id/emojiTabJokes"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_emoji_jokes"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:alpha="0.55" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/emojiRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="6dp"
+                android:clipToPadding="false"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+
+        <!-- Tab 3: Photos Content Layout -->
+        <LinearLayout
+            android:id="@+id/layoutTabPhotos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/photos_from_gallery"
+                    android:textColor="@color/cosmic_text_subtitle"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/app_font" />
+
+                <TextView
+                    android:id="@+id/txtPhotoCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/zero_photos"
+                    android:textColor="@color/cosmic_accent"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/app_font" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Empty state when 0 photos selected -->
+                <LinearLayout
+                    android:id="@+id/layoutEmptyPhotoState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <FrameLayout
+                        android:id="@+id/btnEmptyAddPhoto"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:background="@drawable/bg_card"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="10dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_dashed_photo_border"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_add_photo"
+                                android:scaleType="fitCenter" />
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- RecyclerView when photos exist -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/photoRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="6dp"
+                    android:clipToPadding="false"
+                    android:scrollbars="vertical"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Lottie Loading progress view -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/progressBar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:lottie_rawRes="@raw/loading_data"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+    </FrameLayout>
+
+    <!-- Bottom Next Button Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/cosmic_background">
+
+        <!-- Purple Limit & Count Indicator -->
+        <TextView
+            android:id="@+id/txtItemLimitInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:textColor="#8A52FF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_font"
+            tools:text="Selected 0 of 40" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/btn_continue"
+            android:textColor="@color/cosmic_white"
+            android:background="@drawable/bg_purple_gradient_btn"
+            android:stateListAnimator="@null"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_font" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

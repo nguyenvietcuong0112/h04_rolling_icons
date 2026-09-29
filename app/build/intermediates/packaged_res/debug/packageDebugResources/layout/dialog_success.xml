@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_margin="16dp"
+    android:background="@drawable/bg_dialog_vintage"
+    android:gravity="center">
+
+    <!-- Success Icon / Checkmark -->
+    <ImageView
+        android:id="@+id/imgSuccessIcon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/checkbox_selected"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Success Title -->
+    <TextView
+        android:id="@+id/txtSuccessTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/toast_wallpaper_set_success"
+        android:textColor="#2E1C0C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="@font/app_font" />
+
+    <!-- Success Message -->
+    <TextView
+        android:id="@+id/txtSuccessMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/toast_apply_wallpaper_tip"
+        android:textColor="#2E1C0C"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/app_font" />
+
+    <!-- OK Button to back to Home -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOk"
+        android:layout_width="160dp"
+        android:layout_height="44dp"
+        android:text="@string/btn_ok"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_purple_gradient_btn"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:fontFamily="@font/app_font" />
+
+    <!-- Native Ad Frame at bottom of dialog -->
+    <FrameLayout
+        android:id="@+id/layoutAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <include layout="@layout/shimer_top_layout_recycler_native" />
+    </FrameLayout>
+
+</LinearLayout>
