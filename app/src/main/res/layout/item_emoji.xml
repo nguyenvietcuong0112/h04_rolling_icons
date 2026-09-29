@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/emoji_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/bg_item_card"
+    android:clickable="true"
+    android:focusable="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/emoji_item_icon_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside" />
+
+        <!-- Top-Right Selection Checkbox -->
+        <ImageView
+            android:id="@+id/emoji_item_icon_checked_view"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="4dp"
+            android:src="@drawable/checkbox_unselected"
+            android:visibility="visible" />
+
+        <!-- Bottom-Left Link App Badge -->
+        <FrameLayout
+            android:id="@+id/btnLinkApp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_circle_unbound_link"
+            android:clickable="true"
+            android:focusable="true">
+
+
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

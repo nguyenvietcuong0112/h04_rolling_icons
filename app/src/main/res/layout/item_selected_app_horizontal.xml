@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:layout_margin="4dp">
+
+    <ImageView
+        android:id="@+id/imgSelectedIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:background="@drawable/bg_search_bar"
+        android:padding="6dp" />
+
+    <!-- A small delete badge on top right -->
+    <ImageView
+        android:id="@+id/btnRemoveIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="top|right"
+        android:src="@drawable/photo_icon_edit_close_bt"
+        android:tint="#C85C32"
+        android:padding="4dp"
+        android:clickable="true"
+        android:focusable="true" />
+</FrameLayout>

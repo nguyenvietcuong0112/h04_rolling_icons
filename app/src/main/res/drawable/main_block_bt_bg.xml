@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Nền bán trong suốt để nổi bật trên ảnh nền -->
+    <solid android:color="#20FFFFFF" />
+    <!-- Viền mỏng tinh tế -->
+    <stroke
+        android:width="1dp"
+        android:color="#40FFFFFF" />
+    <!-- Bo tròn góc 20dp như thiết kế cũ -->
+    <corners android:radius="20dp" />
+</shape>

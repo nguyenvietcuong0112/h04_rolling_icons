@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "104100147977",
+    "project_id": "h04-rolling-icons",
+    "storage_bucket": "h04-rolling-icons.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104100147977:android:bada91cc86463a9bad99d8",
+        "android_client_info": {
+          "package_name": "com.iconchanger.rollingicons"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2Hd2j-zY-ZUaah9fbFECC3ZHufh18ego"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

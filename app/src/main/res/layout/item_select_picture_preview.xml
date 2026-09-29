@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_marginEnd="8dp">
+
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom|start"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_white_rounded_12"
+        android:clipToOutline="true" />
+
+    <FrameLayout
+        android:id="@+id/btnRemove"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="top|end"
+        android:background="@drawable/bg_red_minus_circle"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_minus" />
+    </FrameLayout>
+</FrameLayout>

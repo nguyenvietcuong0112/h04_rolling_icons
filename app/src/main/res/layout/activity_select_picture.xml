@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cosmic_background"
+    android:fitsSystemWindows="false"
+    android:paddingTop="24dp">
+
+    <!-- Top Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingHorizontal="16dp">
+
+        <FrameLayout
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_back_pur"
+               />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/select_picture_title"
+            android:textColor="@color/cosmic_text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_font" />
+    </RelativeLayout>
+
+    <!-- Category Tabs: All Photo | Folder -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:paddingHorizontal="48dp"
+        android:gravity="center">
+
+        <!-- All Photo Container -->
+        <LinearLayout
+            android:id="@+id/tabAllPhoto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/txtTabAllPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_all_photo"
+                android:textColor="@color/cosmic_accent"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/app_font" />
+
+            <View
+                android:id="@+id/indicatorAllPhoto"
+                android:layout_width="40dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_purple_indicator" />
+        </LinearLayout>
+
+        <!-- Folder Container -->
+        <LinearLayout
+            android:id="@+id/tabFolder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/txtTabFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_folder"
+                android:textColor="@color/cosmic_text_primary"
+                android:textSize="16sp"
+                android:fontFamily="@font/app_font" />
+
+            <View
+                android:id="@+id/indicatorFolder"
+                android:layout_width="40dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_purple_indicator"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Photo Grid -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gridRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingHorizontal="12dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <!-- Bottom Selected Bar -->
+    <LinearLayout
+        android:id="@+id/layoutBottomSelectedBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/cosmic_white"
+        android:padding="16dp"
+        android:elevation="8dp">
+
+        <!-- Selected Count & Next Button -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtSelectedLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selected_label"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/app_font" />
+
+                <TextView
+                    android:id="@+id/txtSelectedCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="0 Files"
+                    android:textColor="@color/cosmic_accent"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/app_font" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingHorizontal="24dp"
+                android:text="@string/btn_next_arrow"
+                android:textColor="@color/cosmic_white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_purple_gradient_btn"
+                android:stateListAnimator="@null"
+                android:fontFamily="@font/app_font" />
+        </RelativeLayout>
+
+        <!-- Horizontal Selected Thumbnails -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/selectedRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal"
+            android:clipToPadding="false" />
+    </LinearLayout>
+
+</LinearLayout>

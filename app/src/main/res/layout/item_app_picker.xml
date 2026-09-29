@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/bg_item_card"
+    android:clickable="true"
+    android:focusable="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/app_picker_icon_view"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/app_picker_title_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="6dp"
+                android:textSize="11sp"
+                android:textColor="@color/cosmic_text_primary"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:fontFamily="@font/app_font" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/app_picker_checked_view"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="4dp"
+            android:src="@drawable/checkbox_unselected"
+            android:visibility="visible" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rolling Icon: Live Wallpaper</string>
+    <string name="wallpaper_label">रोलिंग आइकन लाइव वॉलपेपर</string>
+    <string name="wallpaper_description">गुरुत्वाकर्षण के साथ चलने वाले यथार्थवादी 3D भौतिक ऐप आइकन का अनुकरण करने वाला लाइव वॉलपेपर।</string>
+    <string name="settings_label">रोलिंग आइकन सेटिंग्स</string>
+
+    <!-- MainActivity -->
+    <string name="title_3d_custom_icons">3D रोलिंग आइकन</string>
+    <string name="rolling_icon_title">रोलिंग आइकन</string>
+    <string name="rolling_icon_desc">आपके आइकनों के लिए रोलिंग एनीमेशन</string>
+    <string name="btn_start">शुरू करें</string>
+    <string name="spinning_icon_title">स्पिनिंग आइकन</string>
+    <string name="spinning_icon_desc">अपने आइकनों को लगातार घुमाएं</string>
+    <string name="shape_path_title">हार्टिंग आइकन</string>
+    <string name="shape_path_desc">जीवंत आइकनों के लिए दिल की धड़कन एनीमेशन</string>
+    <string name="emoji_icon_title">इमोजी आइकन</string>
+    <string name="emoji_icon_desc">सक्रिय इमोजी प्रबंधित करें</string>
+    <string name="photo_icon_title">फोटो आइकन</string>
+    <string name="photo_icon_desc">सक्रिय फ़ोटो प्रबंधित करें</string>
+    <string name="wallpaper_title">लाइव वॉलपेपर</string>
+    <string name="wallpaper_desc">स्टैटिक / लाइव वॉलपेपर सेट करें</string>
+
+    <!-- Launcher & Game -->
+    <string name="score_format">स्कॉर: %d</string>
+    <string name="score_0">स्कॉर: 0</string>
+    <string name="exit_game">खेल से बाहर निकलें</string>
+    <string name="exit_launcher">लॉन्चर से बाहर निकलें</string>
+    <string name="all_applications">सभी एप्लिकेशन</string>
+    <string name="exit_title">एप्लिकेशन बंद करें</string>
+    <string name="exit_message">क्या आप वाकई ऐप से बाहर निकलना चाहते हैं?</string>
+    <string name="btn_exit">बाहर निकलें</string>
+    <string name="btn_next">आगे</string>
+    <string name="btn_cancel">रद्द करें</string>
+
+    <!-- Selection Activities -->
+    <string name="configure_icons">आइकन सेटिंग्स</string>
+    <string name="configure_path_icons">पाथ आइकन कॉन्फ़िगर करें</string>
+    <string name="selected_label">चयनित:</string>
+    <string name="photos_count_format">%d फ़ोटो</string>
+    <string name="zero_photos">0 फ़ोटो</string>
+    <string name="btn_continue">जारी रखें</string>
+    <string name="permission_title">अनुमति</string>
+    <string name="permission_photo_title">फोटो एक्सेस की अनुमति दें</string>
+    <string name="permission_photo_desc">अनूठे 3D रोलिंग आइकन थीम बनाने के लिए अपनी स्वयं की फ़ोटो और वॉलपेपर का उपयोग करें।</string>
+    <string name="tab_apps">ऐप्स</string>
+    <string name="tab_emoji">इमोजी</string>
+    <string name="tab_photos">फ़ोटो</string>
+
+    <!-- Shape Path Selector -->
+    <string name="select_shape_path">आकार पथ चुनें</string>
+    <string name="select_shape_desc">आइकन गति के लिए पथ चुनें:</string>
+    <string name="shape_heart">दिल</string>
+    <string name="shape_infinity">अनंत</string>
+    <string name="shape_star">तारा</string>
+    <string name="shape_flower">फूल</string>
+    <string name="shape_clover">चार पत्तियों वाला घास</string>
+    <string name="shape_butterfly">तितली</string>
+
+    <!-- Spinning Styles -->
+    <string name="spinning_style_title">घूमने की शैली</string>
+    <string name="select_spinning_style">घूमने की शैली चुनें</string>
+    <string name="single_circle_title">एकल वृत्त</string>
+    <string name="single_circle_desc">सभी आइकन एक बड़े वृत्त में घूमते हैं</string>
+    <string name="dual_circle_title">दोहरा वृत्त</string>
+    <string name="dual_circle_desc">विपरीत दिशाओं में घूमने वाले वृत्त</string>
+    <string name="vortex_spiral_title">भंवर सर्पिल</string>
+    <string name="vortex_spiral_desc">आइकन सर्पिल पैटर्न में घूमते हैं</string>
+    <string name="selected_count_format">%2$d में से %1$d चयनित</string>
+
+    <!-- Settings Activity -->
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="make_it_launcher">डिफ़ॉल्ट होम ऐप बनाएं?</string>
+    <string name="size_small">छोटा</string>
+    <string name="size_middle">मध्यम</string>
+    <string name="size_large">बड़ा</string>
+    <string name="select_bg_image">पृष्ठभूमि छवि चुनें</string>
+    <string name="select_bg_image_desc">पृष्ठभूमि के लिए कस्टम छवि चुनें</string>
+    <string name="bg_default">डिफ़ॉल्ट</string>
+    <string name="bg_custom_image">कस्टम छवि</string>
+    <string name="enable_float_button">फ्लोटिंग बटन सक्षम करें?</string>
+    <string name="float_button_desc">लॉन्चर का फ्लोटिंग बटन</string>
+    <string name="enable_wallpaper_touch">वॉलपेपर स्पर्श सक्षम करें?</string>
+    <string name="menu_feedback">प्रतिक्रिया</string>
+    <string name="menu_rate_us">हमें रेटिंग दें</string>
+    <string name="menu_about_us">हमारे बारे में</string>
+    <string name="menu_privacy_policy">गोपनीयता नीति</string>
+    <string name="menu_service_policy">सेवा शर्तें</string>
+    <string name="menu_about_ads">विज्ञापन के बारे में</string>
+
+    <!-- Wallpapers -->
+    <string name="select_wallpaper">वॉलपेपर चुनें</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_opening_search">खोज खोली जा रही है...</string>
+    <string name="toast_cannot_open_app">यह ऐप नहीं खोला जा सकता!</string>
+    <string name="toast_bg_updated">पृष्ठभूमि अद्यतन की गई!</string>
+    <string name="toast_select_launcher">सक्रिय करने के लिए सूची से हमारा लॉन्चर चुनें!</string>
+    <string name="toast_feedback_coming">प्रतिक्रिया सुविधा जल्द आ रही है!</string>
+    <string name="toast_thanks_rating">5 स्टार देने के लिए धन्यवाद!</string>
+    <string name="toast_about_app">रोलिंग आइकन सिमुलेशन ऐप। संस्करण 1.0</string>
+    <string name="toast_about_ads">ऐप पूरी तरह से मुफ़्त है!</string>
+    <string name="toast_no_browser">कोई वेब ब्राउज़र इंस्टॉल नहीं है!</string>
+    <string name="toast_select_one_app">कृपया कम से कम 1 ऐप चुनें!</string>
+    <string name="toast_apply_wallpaper_tip">लाइव वॉलपेपर मोड लागू करने के लिए \'वॉलपेपर सेट करें\' पर क्लिक करें!</string>
+    <string name="toast_unsupported_wallpaper">यह डिवाइस लाइव वॉलपेपर का समर्थन नहीं करता है!</string>
+
+    <string name="toast_select_language_continue">जारी रखने के लिए भाषा चुनें</string>
+    <string name="language">भाषा</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_hindi">हिन्दी</string>
+    <string name="language_indonesian">Bahasa Indonesia</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_vietnamese">Tiếng Việt</string>
+    <string name="language_japanese">日本語</string>
+
+    <string name="splash_ads_warning">विज्ञापन जल्द लोड हो सकते हैं, प्रतीक्षा करें…</string>
+    <string name="intro_slide_1_title">अपनी होम स्क्रीन को चमकाएं</string>
+    <string name="intro_slide_1_des">जीवंत लुक बनाने के लिए सुंदर एनिमेटेड आइकन जोड़ें।</string>
+    <string name="intro_slide_2_title">आपकी शैली से मेल खाती गति</string>
+    <string name="intro_slide_2_des">आइकन को जीवंत बनाने के लिए सुंदर एनीमेशन चुनें।</string>
+    <string name="intro_slide_3_title">आइकन को 3D में लाएं</string>
+    <string name="intro_slide_3_des">अपनी होम स्क्रीन पर 3D प्रभाव जोड़ें।</string>
+    <string name="intro_slide_4_title">लुक पूरा करें</string>
+    <string name="intro_slide_4_des">सुंदर वॉलपेपर के साथ एनिमेटेड आइकन मिलाएं।</string>
+    <string name="intro_next">आगे</string>
+
+    <!-- Newly Extracted UI Strings -->
+    <string name="btn_retry">पुनः प्रयास करें</string>
+    <string name="select_display_mode">प्रदर्शन मोड चुनें</string>
+    <string name="live_wallpaper_mode">लाइव वॉलपेपर मोड</string>
+    <string name="btn_apply">लागू करें</string>
+    <string name="btn_get_started">शुरू करें  ➔</string>
+    <string name="photos_from_gallery">आपकी गैलरी से फ़ोटो</string>
+    <string name="select_picture_title">चित्र चुनें</string>
+    <string name="tab_all_photo">सभी फ़ोटो</string>
+    <string name="selected_files_zero">चयनित: 0 फ़ाइलें</string>
+    <string name="selected_files_format">चयनित: %d फ़ाइलें</string>
+    <string name="selected_files_count_only_format">%1$d फ़ाइलें</string>
+    <string name="toast_max_item_limit">अधिकतम %1$d आइटम की अनुमति है</string>
+    <string name="btn_go_home">होम पर जाएं</string>
+    <string name="success_title">सफलता!</string>
+    <string name="success_desc">आपकी रोलिंग आइकॉन थीम और बैकग्राउंड सेट हो गए हैं</string>
+    <string name="btn_save">सहेजें</string>
+    <string name="dialog_set_wallpaper_as_title">वॉलपेपर इस रूप में सेट करें</string>
+    <string name="btn_set_wallpaper">वॉलपेपर सेट करें</string>
+
+    <!-- Additional Toast & Dynamic Strings -->
+    <string name="toast_select_wallpaper_first">कृपया पहले एक वॉलपेपर चुनें</string>
+    <string name="toast_wallpaper_updated_rolling">रोलिंग आइकन के लिए वॉलपेपर अद्यतन किया गया!</string>
+    <string name="toast_wallpaper_set_success">वॉलपेपर सफलतापूर्वक सेट हो गया!</string>
+    <string name="toast_wallpaper_updated">वॉलपेपर अद्यतन किया गया!</string>
+    <string name="toast_change_default_home">बाहर निकलने के लिए डिफ़ॉल्ट होम ऐप बदलें</string>
+    <!-- Delete Photo Dialog -->
+    <string name="delete_photo_title">फ़ोटो हटाएं</string>
+    <string name="delete_photo_message">क्या आप वाकई इस फ़ोटो को हटाना चाहते हैं?</string>
+    <string name="btn_delete">हटाएं</string>
+    <!-- Loading Dialog -->
+    <string name="loading_ads">लोड हो रहा है, कृपया प्रतीक्षा करें…</string>
+
+    <!-- Layout Extracted Strings -->
+    <string name="customize_setting">सेटिंग्स कस्टमाइज़ करें</string>
+    <string name="live_wallpaper_mode_desc">आपके चयनित ऐप और फ़ोटो लाइव वॉलपेपर के रूप में रोल करेंगे</string>
+    <string name="home_launcher_mode">होम लॉन्चर मोड</string>
+    <string name="home_launcher_mode_desc">अपनी होम स्क्रीन को इंटरैक्टिव फ़िज़िक्स आइकन से बदलें।</string>
+    <string name="physics_wallpaper_settings">फ़िज़िक्स वॉलपेपर सेटिंग्स</string>
+    <string name="icon_size">आइकन का आकार</string>
+    <string name="set_as_default_home">डिफ़ॉल्ट होम स्क्रीन के रूप में सेट करें</string>
+    <string name="touch_interaction">स्पर्श सहभागिता</string>
+    <string name="touch_interaction_desc">वॉलपेपर पर रोलिंग आइकन पर क्लिक करने की अनुमति दें</string>
+    <string name="enable_float_button_title">फ़्लोटिंग बटन सक्षम करें?</string>
+    <string name="float_button_subdesc">लॉन्चर का फ़्लोटिंग बटन</string>
+    <string name="launcher_settings">लॉन्चर सेटिंग्स</string>
+    <string name="floating_button">फ़्लोटिंग बटन</string>
+    <string name="support_information">सहायता जानकारी</string>
+    <string name="version">संस्करण</string>
+    <string name="shape_crown">मुकुट</string>
+    <string name="shape_diamond">हीरा</string>
+    <string name="home_screen">होम स्क्रीन</string>
+    <string name="home_screen_desc">होम स्क्रीन के लिए वॉलपेपर सेट करें</string>
+    <string name="lock_screen">लॉक स्क्रीन</string>
+    <string name="lock_screen_desc">लॉक स्क्रीन के लिए वॉलपेपर सेट करें</string>
+    <string name="lock_home_screen">लॉक और होम स्क्रीन</string>
+    <string name="lock_home_screen_desc">दोनों स्क्रीन के लिए वॉलपेपर सेट करें</string>
+    <string name="no_internet_or_wallpapers">कोई इंटरनेट कनेक्शन या वॉलपेपर नहीं मिला</string>
+    <string name="btn_ok">ठीक है</string>
+    <string name="tab_folder">फ़ोल्डर</string>
+    <string name="btn_next_arrow">आगे ➔</string>
+    <string name="tab_wallpaper">वॉलपेपर</string>
+    <string name="tab_live_wallpaper">लाइव वॉलपेपर</string>
+    <string name="tab_live">लाइव</string>
+    <string name="tab_static">स्थिर</string>
+    <string name="category_all">सभी</string>
+    <string name="live_wallpaper_coming_soon">लाइव वॉलपेपर जल्द ही आ रहा है!</string>
+    <string name="search_apps_hint">ऐप्स खोजें...</string>
+    <string name="prepare_rolling">तैयार हो रहा है...</string>
+    <string name="toast_video_not_available">वीडियो उपलब्ध नहीं है</string>
+    <string name="toast_failed_prepare_video">वॉलपेपर वीडियो तैयार करने में विफल</string>
+</resources>

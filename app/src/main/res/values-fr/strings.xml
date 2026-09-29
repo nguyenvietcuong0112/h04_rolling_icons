@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rolling Icon: Live Wallpaper</string>
+    <string name="wallpaper_label">Fonds d\'écran Animés Rolling Icons</string>
+    <string name="wallpaper_description">Fond d\'écran animé simulant des icônes 3D réalistes se déplaçant avec la gravité.</string>
+    <string name="settings_label">Paramètres Rolling Icons</string>
+
+    <!-- MainActivity -->
+    <string name="title_3d_custom_icons">Icône 3D Amusante</string>
+    <string name="rolling_icon_title">Icône Roulante</string>
+    <string name="rolling_icon_desc">Animation de roulement pour vos icônes</string>
+    <string name="btn_start">Démarrer</string>
+    <string name="spinning_icon_title">Icône Tournante</string>
+    <string name="spinning_icon_desc">Faites tourner vos icônes en continu</string>
+    <string name="shape_path_title">Icône Cœur</string>
+    <string name="shape_path_desc">Animation de battement de cœur pour icônes vivantes</string>
+    <string name="emoji_icon_title">Icône Emoji</string>
+    <string name="emoji_icon_desc">Gérer les émojis actifs</string>
+    <string name="photo_icon_title">Icône Photo</string>
+    <string name="photo_icon_desc">Gérer les photos actives</string>
+    <string name="wallpaper_title">Fond d\'écran animé</string>
+    <string name="wallpaper_desc">Définir un fond d\'écran statique / animé</string>
+
+    <!-- Launcher & Game -->
+    <string name="score_format">Score : %d</string>
+    <string name="score_0">Score : 0</string>
+    <string name="exit_game">Quitter le jeu</string>
+    <string name="exit_launcher">Quitter le lanceur</string>
+    <string name="all_applications">TOUTES LES APPLICATIONS</string>
+    <string name="exit_title">Quitter l\'application</string>
+    <string name="exit_message">Êtes-vous sûr de vouloir quitter l\'application ?</string>
+    <string name="btn_exit">Quitter</string>
+    <string name="btn_next">Suivant</string>
+    <string name="btn_cancel">Annuler</string>
+
+    <!-- Selection Activities -->
+    <string name="configure_icons">Paramètres d\'icônes</string>
+    <string name="configure_path_icons">Configurer les icônes de trajectoire</string>
+    <string name="selected_label">Sélectionné :</string>
+    <string name="photos_count_format">%d photos</string>
+    <string name="zero_photos">0 photos</string>
+    <string name="btn_continue">Continuer</string>
+    <string name="permission_title">Autorisations</string>
+    <string name="permission_photo_title">Autoriser l\'accès aux photos</string>
+    <string name="permission_photo_desc">Utilisez vos propres photos et fonds d\'écran pour créer des thèmes d\'icônes 3D uniques.</string>
+    <string name="tab_apps">Apps</string>
+    <string name="tab_emoji">Émojis</string>
+    <string name="tab_photos">Photos</string>
+
+    <!-- Shape Path Selector -->
+    <string name="select_shape_path">Sélectionner la trajectoire</string>
+    <string name="select_shape_desc">Sélectionnez une trajectoire pour le mouvement des icônes :</string>
+    <string name="shape_heart">Cœur</string>
+    <string name="shape_infinity">Infini</string>
+    <string name="shape_star">Étoile</string>
+    <string name="shape_flower">Fleur</string>
+    <string name="shape_clover">Trèfle à quatre feuilles</string>
+    <string name="shape_butterfly">Papillon</string>
+
+    <!-- Spinning Styles -->
+    <string name="spinning_style_title">Style de rotation</string>
+    <string name="select_spinning_style">Sélectionner le style de rotation</string>
+    <string name="single_circle_title">Cercle unique</string>
+    <string name="single_circle_desc">Toutes les icônes tournent dans un grand cercle</string>
+    <string name="dual_circle_title">Double cercle</string>
+    <string name="dual_circle_desc">Cercles concentriques tournant dans des directions opposées</string>
+    <string name="vortex_spiral_title">Spirale de vortex</string>
+    <string name="vortex_spiral_desc">Les icônes tournent en spirale de vortex</string>
+    <string name="selected_count_format">Sélectionné %1$d sur %2$d</string>
+
+    <!-- Settings Activity -->
+    <string name="settings_title">Paramètres</string>
+    <string name="make_it_launcher">Définir comme écran d\'accueil ?</string>
+    <string name="size_small">Petit</string>
+    <string name="size_middle">Moyen</string>
+    <string name="size_large">Grand</string>
+    <string name="select_bg_image">Sélectionner l\'image d\'arrière-plan</string>
+    <string name="select_bg_image_desc">Choisir une image personnalisée pour le fond</string>
+    <string name="bg_default">Par défaut</string>
+    <string name="bg_custom_image">Image personnalisée</string>
+    <string name="enable_float_button">Activer le bouton flottant ?</string>
+    <string name="float_button_desc">Bouton flottant du lanceur</string>
+    <string name="enable_wallpaper_touch">Activer le toucher du fond d\'écran ?</string>
+    <string name="menu_feedback">Commentaires</string>
+    <string name="menu_rate_us">Évaluez-nous</string>
+    <string name="menu_about_us">À propos de nous</string>
+    <string name="menu_privacy_policy">Politique de confidentialité</string>
+    <string name="menu_service_policy">Conditions de service</string>
+    <string name="menu_about_ads">À propos des annonces</string>
+
+    <!-- Wallpapers -->
+    <string name="select_wallpaper">Sélectionner le fond d\'écran</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_opening_search">Ouverture de la recherche...</string>
+    <string name="toast_cannot_open_app">Impossible d\'ouvrir cette application !</string>
+    <string name="toast_bg_updated">Image d\'arrière-plan mise à jour !</string>
+    <string name="toast_select_launcher">Veuillez sélectionner notre lanceur dans la liste pour l\'activer !</string>
+    <string name="toast_feedback_coming">La fonctionnalité de commentaire arrive bientôt !</string>
+    <string name="toast_thanks_rating">Merci de nous avoir attribué 5 étoiles !</string>
+    <string name="toast_about_app">Application de simulation Rolling Icons. Version 1.0</string>
+    <string name="toast_about_ads">L\'application est totalement gratuite !</string>
+    <string name="toast_no_browser">Aucun navigateur Web installé !</string>
+    <string name="toast_select_one_app">Veuillez sélectionner au moins 1 application !</string>
+    <string name="toast_apply_wallpaper_tip">Veuillez cliquer sur \'Définir le fond d\'écran\' pour appliquer le mode fond d\'écran animé !</string>
+    <string name="toast_unsupported_wallpaper">Cet appareil ne prend pas en charge les fonds d\'écran animés !</string>
+
+    <string name="toast_select_language_continue">Veuillez sélectionner une langue pour continuer</string>
+    <string name="language">Langue</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_hindi">हिन्दी</string>
+    <string name="language_indonesian">Bahasa Indonesia</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_vietnamese">Tiếng Việt</string>
+    <string name="language_japanese">日本語</string>
+
+    <string name="splash_ads_warning">Les annonces peuvent charger sous peu, veuillez patienter…</string>
+    <string name="intro_slide_1_title">Faites briller votre écran d\'accueil</string>
+    <string name="intro_slide_1_des">Ajoutez de belles icônes animées pour créer un look unique.</string>
+    <string name="intro_slide_2_title">Des mouvements qui vous ressemblent</string>
+    <string name="intro_slide_2_des">Choisissez parmi des animations fluides pour animer vos icônes.</string>
+    <string name="intro_slide_3_title">Passez vos icônes en 3D</string>
+    <string name="intro_slide_3_des">Ajoutez une profondeur superbe à votre écran d\'accueil.</string>
+    <string name="intro_slide_4_title">Complétez le style</string>
+    <string name="intro_slide_4_des">Associez vos icônes animées à de magnifiques fonds d\'écran.</string>
+    <string name="intro_next">Suivant</string>
+
+    <!-- Newly Extracted UI Strings -->
+    <string name="btn_retry">Réessayer</string>
+    <string name="select_display_mode">Sélectionner le mode d\'affichage</string>
+    <string name="live_wallpaper_mode">Mode fond d\'écran animé</string>
+    <string name="btn_apply">Appliquer</string>
+    <string name="btn_get_started">Démarrer  ➔</string>
+    <string name="photos_from_gallery">Photos de votre galerie</string>
+    <string name="select_picture_title">Sélectionner l\'image</string>
+    <string name="tab_all_photo">Toutes les photos</string>
+    <string name="selected_files_zero">Sélectionné : 0 Fichiers</string>
+    <string name="selected_files_format">Sélectionné : %d Fichiers</string>
+    <string name="selected_files_count_only_format">%1$d Fichiers</string>
+    <string name="toast_max_item_limit">Maximum %1$d éléments autorisés</string>
+    <string name="btn_go_home">Aller à l\'accueil</string>
+    <string name="success_title">Succès !</string>
+    <string name="success_desc">Votre thème d\'icônes rotatives et votre fond sont définis</string>
+    <string name="btn_save">Enregistrer</string>
+    <string name="dialog_set_wallpaper_as_title">Définir le fond d\'écran comme</string>
+    <string name="btn_set_wallpaper">Définir le fond d\'écran</string>
+
+    <!-- Additional Toast & Dynamic Strings -->
+    <string name="toast_select_wallpaper_first">Veuillez d\'abord sélectionner un fond d\'écran</string>
+    <string name="toast_wallpaper_updated_rolling">Fond d\'écran mis à jour pour Rolling Icons !</string>
+    <string name="toast_wallpaper_set_success">Fond d\'écran défini avec succès !</string>
+    <string name="toast_wallpaper_updated">Fond d\'écran mis à jour !</string>
+    <string name="toast_change_default_home">Veuillez changer l\'application d\'accueil par défaut pour quitter</string>
+    <!-- Delete Photo Dialog -->
+    <string name="delete_photo_title">Supprimer la photo</string>
+    <string name="delete_photo_message">Voulez-vous vraiment supprimer cette photo ?</string>
+    <string name="btn_delete">Supprimer</string>
+    <!-- Loading Dialog -->
+    <string name="loading_ads">Chargement, veuillez patienter…</string>
+
+    <!-- Layout Extracted Strings -->
+    <string name="customize_setting">Personnaliser les paramètres</string>
+    <string name="live_wallpaper_mode_desc">Vos applications et photos sélectionnées rouleront en fond d\'écran animé</string>
+    <string name="home_launcher_mode">Mode Launcher</string>
+    <string name="home_launcher_mode_desc">Remplacez complètement votre écran d\'accueil par des icônes physiques interactives.</string>
+    <string name="physics_wallpaper_settings">Paramètres du fond d\'écran physique</string>
+    <string name="set_as_default_home">Définir comme écran d\'accueil par défaut</string>
+    <string name="touch_interaction">Interaction tactile</string>
+    <string name="touch_interaction_desc">Autoriser le clic sur les icônes en mouvement sur le fond d\'écran</string>
+    <string name="enable_float_button_title">Activer le bouton flottant?</string>
+    <string name="float_button_subdesc">Bouton flottant du Launcher</string>
+    <string name="launcher_settings">Paramètres du Launcher</string>
+    <string name="floating_button">Bouton flottant</string>
+    <string name="support_information">Informations de support</string>
+    <string name="version">Version</string>
+    <string name="shape_crown">Couronne</string>
+    <string name="shape_diamond">Diamant</string>
+    <string name="home_screen">Écran d\'accueil</string>
+    <string name="home_screen_desc">Définir comme fond d\'écran d\'accueil</string>
+    <string name="lock_screen">Écran de verrouillage</string>
+    <string name="lock_screen_desc">Définir comme fond d\'écran de verrouillage</string>
+    <string name="lock_home_screen">Écran d\'accueil et de verrouillage</string>
+    <string name="lock_home_screen_desc">Définir le fond d\'écran pour les deux écrans</string>
+    <string name="no_internet_or_wallpapers">Pas de connexion Internet ou aucun fond d\'écran trouvé</string>
+    <string name="btn_ok">OK</string>
+    <string name="tab_folder">Dossier</string>
+    <string name="btn_next_arrow">Suivant ➔</string>
+    <string name="tab_wallpaper">Fond d\'écran</string>
+    <string name="tab_live_wallpaper">Fond d\'écran animé</string>
+    <string name="tab_live">Live</string>
+    <string name="tab_static">Static</string>
+    <string name="category_all">Tout</string>
+    <string name="live_wallpaper_coming_soon">Les fonds d\'écran animés arrivent bientôt !</string>
+    <string name="icon_size">Taille des icônes</string>
+    <string name="search_apps_hint">Rechercher des applications...</string>
+    <string name="prepare_rolling">Préparation en cours...</string>
+    <string name="toast_video_not_available">Vidéo non disponible</string>
+    <string name="toast_failed_prepare_video">Échec de la préparation de la vidéo du fond d\'écran</string>
+</resources>

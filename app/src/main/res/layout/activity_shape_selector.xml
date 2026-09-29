@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cosmic_background"
+    android:fitsSystemWindows="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:background="@drawable/bg_header"
+        android:paddingTop="@dimen/dp_24"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/app_font"
+            android:text="@string/select_shape_path"
+            android:textColor="@color/cosmic_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:descendantFocusability="beforeDescendants"
+        android:fillViewport="true">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:descendantFocusability="beforeDescendants"
+            android:padding="8dp">
+
+            <!-- Card 1: Heart -->
+            <FrameLayout
+                android:id="@+id/cardHeart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_card_border"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_120"
+                        android:layout_height="@dimen/dp_120"
+                        android:src="@drawable/ic_shape_heart" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shape_heart"
+                        android:textColor="@color/cosmic_text_primary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/app_font" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Card 2: Infinity -->
+            <FrameLayout
+                android:id="@+id/cardInfinity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_card_border"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_120"
+                        android:layout_height="@dimen/dp_120"
+                        android:src="@drawable/ic_shape_infinity" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shape_infinity"
+                        android:textColor="@color/cosmic_text_primary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/app_font" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Card 3: Star -->
+            <FrameLayout
+                android:id="@+id/cardStar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_card_border"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_120"
+                        android:layout_height="@dimen/dp_120"
+                        android:src="@drawable/ic_star" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shape_star"
+                        android:textColor="@color/cosmic_text_primary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/app_font" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Card 4: Crown -->
+            <FrameLayout
+                android:id="@+id/cardCrown"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_card_border"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_120"
+                        android:layout_height="@dimen/dp_120"
+                        android:src="@drawable/ic_crown" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shape_crown"
+                        android:textColor="#45159D"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/app_font" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Hidden Cards (preserved for potential future activation) -->
+            <!-- Card 5: Flower -->
+            <FrameLayout
+                android:id="@+id/cardFlower"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_card_border"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_120"
+                        android:layout_height="@dimen/dp_120"
+                        android:src="@drawable/ic_shape_flower" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shape_flower"
+                        android:textColor="@color/cosmic_text_primary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/app_font" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Card 6: Clover -->
+            <FrameLayout
+                android:id="@+id/cardClover"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_card_border"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_120"
+                        android:layout_height="@dimen/dp_120"
+                        android:src="@drawable/ic_shape_clover" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shape_clover"
+                        android:textColor="@color/cosmic_text_primary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/app_font" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Card 7: Butterfly -->
+            <FrameLayout
+                android:id="@+id/cardButterfly"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_card_border"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_120"
+                        android:layout_height="@dimen/dp_120"
+                        android:src="@drawable/ic_shape_butterfly" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shape_butterfly"
+                        android:textColor="#45159D"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/app_font" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Card 8: Diamond -->
+            <FrameLayout
+                android:id="@+id/cardDiamond"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_card_border"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_120"
+                        android:layout_height="@dimen/dp_120"
+                        android:src="@drawable/ic_shape_diamond" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shape_diamond"
+                        android:textColor="#45159D"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/app_font" />
+                </LinearLayout>
+            </FrameLayout>
+
+        </GridLayout>
+    </ScrollView>
+
+    <!-- Bottom Native Ad Container -->
+    <FrameLayout
+        android:id="@+id/layoutAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/ads_shimmer_native_media" />
+    </FrameLayout>
+</LinearLayout>

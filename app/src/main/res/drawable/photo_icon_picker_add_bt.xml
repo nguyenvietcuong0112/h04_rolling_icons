@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Circle background with border -->
+    <path
+        android:fillColor="#C85C32"
+        android:strokeColor="#2E1C0C"
+        android:strokeWidth="3"
+        android:pathData="M 24 4 A 20 20 0 1 0 24 44 A 20 20 0 1 0 24 4 Z" />
+
+    <!-- Plus symbol in the center -->
+    <path
+        android:fillColor="@color/cosmic_white"
+        android:pathData="M 22 16 L 26 16 L 26 22 L 32 22 L 32 26 L 26 26 L 26 32 L 22 32 L 22 26 L 16 26 L 16 22 L 22 22 Z" />
+
+</vector>
+

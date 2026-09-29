@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cosmic Theme Colors -->
+    <color name="cosmic_background">#F4F2FF</color>
+    <color name="cosmic_accent">#7F3DFF</color>
+    <color name="cosmic_text_primary">#1A0A4E</color>
+    <color name="cosmic_text_secondary">#8A82A5</color>
+    <color name="cosmic_text_subtitle">#6A608F</color>
+    <color name="cosmic_border_light">#E4E3EC</color>
+    <color name="cosmic_bg_light_lavender">#F0ECFF</color>
+    <color name="cosmic_border_purple_light">#D2C4FF</color>
+    <color name="cosmic_switch_track">#D2C4FF</color>
+    <color name="cosmic_item_selected_border">#7A3CFA</color>
+    <color name="cosmic_white">#FFFFFF</color>
+    <color name="cosmic_bg_selected_card">#ECE8FF</color>
+    <color name="lightTransparent">#E6E8EC</color>
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shimmer_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EFEFEF"
+    android:padding="8dp">
+
+    <!-- Top Header: Icon + Headline + Ad Tag -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingVertical="4dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+
+            <!-- App Icon Placeholder -->
+            <View
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_white_rounded_12"
+                android:backgroundTint="@color/lightTransparent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Headline Line -->
+                <View
+                    android:layout_width="140dp"
+                    android:layout_height="14dp"
+                    android:background="@color/lightTransparent" />
+
+                <!-- Ad Tag Placeholder -->
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/lightTransparent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/lightTransparent" />
+
+        <!-- Bottom CTA Button Placeholder -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@color/lightTransparent" />
+
+    </LinearLayout>
+
+    <!-- Center MediaView Placeholder -->
+
+
+</FrameLayout>

@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Dashed Flower Path representing Shape Map -->
+    <path
+        android:strokeColor="#C85C32"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M 24 16 A 8 8 0 0 1 32 24 A 8 8 0 0 1 24 32 A 8 8 0 0 1 16 24 A 8 8 0 0 1 24 16 M 24 16 C 24 10, 32 10, 32 16 M 32 24 C 38 24, 38 32, 32 32 M 24 32 C 24 38, 16 38, 16 32 M 16 24 C 10 24, 10 16, 16 16 M 24 16 C 24 10, 16 10, 16 16" />
+
+</vector>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cosmic_background"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:background="@drawable/bg_header"
+        android:paddingTop="@dimen/dp_24"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/app_font"
+            android:text="@string/spinning_style_title"
+            android:textColor="@color/cosmic_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Style Selector List -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:descendantFocusability="beforeDescendants"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:id="@+id/cardSingleCircle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_125"
+                android:background="@drawable/bg_card_border"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp">
+
+
+                <ImageView
+                    android:id="@+id/imgCard1"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_100"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_spinning_single_circle" />
+
+                <!-- Arrow Chevron -->
+                <ImageView
+                    android:id="@+id/arrow1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_forward"
+                    />
+
+                <!-- Texts -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_toLeftOf="@id/arrow1"
+                    android:layout_toRightOf="@id/imgCard1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/app_font"
+                        android:text="@string/single_circle_title"
+                        android:textColor="#2E1C0C"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/app_font"
+                        android:maxLines="3"
+                        android:text="@string/single_circle_desc"
+                        android:textColor="#4E3629"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cardDualCircle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_125"
+                android:background="@drawable/bg_card_border"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imgCard2"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_100"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_spinning_dual_circle" />
+
+                <!-- Arrow Chevron -->
+                <ImageView
+                    android:id="@+id/arrow2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_forward"
+                    />
+
+                <!-- Texts -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_toLeftOf="@id/arrow2"
+                    android:layout_toRightOf="@id/imgCard2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/app_font"
+                        android:text="@string/dual_circle_title"
+                        android:textColor="#2E1C0C"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/app_font"
+                        android:maxLines="3"
+                        android:text="@string/dual_circle_desc"
+                        android:textColor="#4E3629"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cardVortex"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_125"
+                android:background="@drawable/bg_card_border"
+                android:padding="12dp">
+
+
+                <ImageView
+                    android:id="@+id/imgCard3"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_100"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_spinning_vortex" />
+
+                <!-- Arrow Chevron -->
+                <ImageView
+                    android:id="@+id/arrow3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_forward"
+                    />
+
+                <!-- Texts -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_toLeftOf="@id/arrow3"
+                    android:layout_toRightOf="@id/imgCard3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/app_font"
+                        android:text="@string/vortex_spiral_title"
+                        android:textColor="#2E1C0C"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/app_font"
+                        android:maxLines="3"
+                        android:text="@string/vortex_spiral_desc"
+                        android:textColor="#4E3629"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Native Ad Container -->
+    <FrameLayout
+        android:id="@+id/layoutAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/ads_shimmer_native_media" />
+    </FrameLayout>
+</LinearLayout>

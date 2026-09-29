@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cosmic_background">
+
+    <!-- Container cho libGDX view -->
+    <FrameLayout
+        android:id="@+id/gdxContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Overlay UI cho Home Launcher -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false">
+
+        <!-- Điểm số của Game Mode -->
+        <TextView
+            android:id="@+id/txtGameScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:text="@string/score_0"
+            android:textColor="#C85C32"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:shadowColor="#20000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:fontFamily="@font/app_font"
+            android:visibility="gone" />
+
+        <!-- Widget Đồng hồ & Ngày tháng đầu trang -->
+        <LinearLayout
+            android:id="@+id/layoutClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:gravity="center">
+
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:format12Hour="hh:mm"
+                android:format24Hour="HH:mm"
+                android:textColor="#2E1C0C"
+                android:textSize="54sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/app_font"
+                android:shadowColor="#10000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4" />
+
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:format12Hour="EEEE, d MMMM"
+                android:format24Hour="EEEE, d MMMM"
+                android:textColor="#4E3629"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/app_font"
+                android:shadowColor="#10000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+        </LinearLayout>
+
+        <!-- Nút tìm kiếm góc trên bên phải -->
+        <ImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/ic_search"
+            android:padding="8dp"
+            android:tint="#2E1C0C"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Nút 9 chấm mở Drawer (Chỉ hiển thị ở chế độ Launcher) -->
+        <ImageView
+            android:id="@+id/btnDrawer"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/ic_drawer"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </RelativeLayout>
+
+    <!-- Panel App Drawer Overlay (Hiển thị khi click vào nút 9 chấm) -->
+    <FrameLayout
+        android:id="@+id/appDrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#902E1C0C"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true">
+
+        <!-- Thẻ bo góc chứa danh sách ứng dụng -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_vintage_card"
+            android:padding="16dp"
+            android:elevation="8dp">
+
+            <!-- Title / Thanh đóng -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/all_applications"
+                    android:textColor="#2E1C0C"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/app_font" />
+
+                <!-- Nút đóng nhanh -->
+                <ImageView
+                    android:id="@+id/btnMinimizeDrawer"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/photo_icon_edit_close_bt"
+                    android:tint="#C85C32"
+                    android:padding="6dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </RelativeLayout>
+
+            <!-- Lưới ứng dụng 4 cột -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/drawerRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingTop="8dp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

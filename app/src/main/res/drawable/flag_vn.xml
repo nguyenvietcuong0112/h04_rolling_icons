@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="20dp"
+    android:viewportWidth="30"
+    android:viewportHeight="20">
+    <!-- Red Background -->
+    <path
+        android:fillColor="#DA251D"
+        android:pathData="M0,0h30v20h-30z"/>
+    <!-- Yellow Star -->
+    <path
+        android:fillColor="#FFFF00"
+        android:pathData="M15,3.12 L16.74,8.47 L22.37,8.47 L17.82,11.78 L19.56,17.13 L15,13.82 L10.44,17.13 L12.18,11.78 L7.63,8.47 L13.26,8.47 Z"/>
+</vector>

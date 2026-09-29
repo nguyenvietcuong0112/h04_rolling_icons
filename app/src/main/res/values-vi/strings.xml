@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rolling Icon: Live Wallpaper</string>
+    <string name="wallpaper_label">Hình Nền Động Rolling Icons</string>
+    <string name="wallpaper_description">Hình nền động mô phỏng icon ứng dụng 3D chân thực di chuyển theo trọng lực.</string>
+    <string name="settings_label">Cài Đặt Rolling Icons</string>
+
+    <!-- MainActivity -->
+    <string name="title_3d_custom_icons">Icon Xoay 3D</string>
+    <string name="rolling_icon_title">Icon Cuộn Trọng Lực</string>
+    <string name="rolling_icon_desc">Tạo hiệu ứng cuộn vật lý sinh động cho icon</string>
+    <string name="btn_start">Bắt đầu</string>
+    <string name="spinning_icon_title">Icon Xoay Tròn</string>
+    <string name="spinning_icon_desc">Làm cho các biểu tượng ứng dụng xoay liên tục</string>
+    <string name="shape_path_title">Biểu Tượng Trái Tim</string>
+    <string name="shape_path_desc">Hiệu ứng nhịp đập trái tim cho biểu tượng sinh động</string>
+    <string name="emoji_icon_title">Biểu Tượng Emoji</string>
+    <string name="emoji_icon_desc">Quản lý danh sách emoji hiển thị</string>
+    <string name="photo_icon_title">Hình Ảnh Cá Nhân</string>
+    <string name="photo_icon_desc">Quản lý ảnh cá nhân hiển thị</string>
+    <string name="wallpaper_title">Hình nền động</string>
+    <string name="wallpaper_desc">Cài đặt hình nền tĩnh / hình nền động</string>
+
+    <!-- Launcher & Game -->
+    <string name="score_format">Điểm: %d</string>
+    <string name="score_0">Điểm: 0</string>
+    <string name="exit_game">Thoát Trò Chơi</string>
+    <string name="exit_launcher">Thoát Launcher</string>
+    <string name="all_applications">TẤT CẢ ỨNG DỤNG</string>
+    <string name="exit_title">Thoát Ứng Dụng</string>
+    <string name="exit_message">Bạn có chắc chắn muốn thoát khỏi ứng dụng không?</string>
+    <string name="btn_exit">Thoát</string>
+    <string name="btn_next">Tiếp tục</string>
+    <string name="btn_cancel">Hủy</string>
+
+    <!-- Selection Activities -->
+    <string name="configure_icons">Cài Đặt Biểu Tượng</string>
+    <string name="configure_path_icons">Tùy Chỉnh Biểu Tượng Quỹ Đạo</string>
+    <string name="selected_label">Đã chọn:</string>
+    <string name="photos_count_format">%d hình ảnh</string>
+    <string name="zero_photos">0 hình ảnh</string>
+    <string name="btn_continue">Tiếp tục</string>
+    <!-- Permission Activity -->
+    <string name="permission_title">Quyền truy cập</string>
+    <string name="permission_photo_title">Cho phép truy cập ảnh</string>
+    <string name="permission_photo_desc">Sử dụng ảnh và hình nền của riêng bạn để tạo chủ đề 3D rolling icon độc đáo theo phong cách của bạn.</string>
+    <string name="tab_apps">Ứng dụng</string>
+    <string name="tab_emoji">Emoji</string>
+    <string name="tab_photos">Hình ảnh</string>
+
+    <!-- Shape Path Selector -->
+    <string name="select_shape_path">Chọn Quỹ Đạo Chuyển Động</string>
+    <string name="select_shape_desc">Chọn quỹ đạo chuyển động cho các biểu tượng:</string>
+    <string name="shape_heart">Trái Tim</string>
+    <string name="shape_infinity">Vô Cực</string>
+    <string name="shape_star">Ngôi Sao</string>
+    <string name="shape_flower">Bông Hoa</string>
+    <string name="shape_clover">Cỏ Bốn Lá</string>
+    <string name="shape_butterfly">Con Bướm</string>
+
+    <!-- Spinning Styles -->
+    <string name="spinning_style_title">Kiểu Xoay Tròn</string>
+    <string name="select_spinning_style">Chọn Kiểu Xoay</string>
+    <string name="single_circle_title">Vòng Tròn Đơn</string>
+    <string name="single_circle_desc">Tất cả biểu tượng xoay theo 1 vòng tròn lớn</string>
+    <string name="dual_circle_title">Vòng Tròn Kép</string>
+    <string name="dual_circle_desc">Hai vòng tròn đồng tâm xoay ngược chiều nhau</string>
+    <string name="vortex_spiral_title">Vòng Xoáy Xoắn Ốc</string>
+    <string name="vortex_spiral_desc">Biểu tượng xoay tạo hiệu ứng xoáy xoắn ốc</string>
+    <string name="selected_count_format">Đã chọn %1$d / %2$d</string>
+    <string name="toast_max_item_limit">Chỉ được chọn tối đa %1$d mục</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_go_home">Về trang chủ</string>
+    <string name="success_title">Thành công!</string>
+    <string name="success_desc">Chủ đề biểu tượng cuộn và hình nền đã được thiết lập</string>
+
+    <!-- Settings Activity -->
+    <string name="settings_title">Cài Đặt</string>
+    <string name="make_it_launcher">Đặt làm màn hình chính mặc định?</string>
+    <string name="size_small">Nhỏ</string>
+    <string name="size_middle">Vừa</string>
+    <string name="size_large">Lớn</string>
+    <string name="select_bg_image">Chọn ảnh nền</string>
+    <string name="select_bg_image_desc">Chọn hình ảnh tùy chỉnh làm hình nền</string>
+    <string name="bg_default">Mặc định</string>
+    <string name="bg_custom_image">Ảnh tùy chỉnh</string>
+    <string name="enable_float_button">Bật nút nổi launcher?</string>
+    <string name="float_button_desc">Nút hỗ trợ nhanh trên màn hình chính</string>
+    <string name="enable_wallpaper_touch">Bật tương tác chạm hình nền?</string>
+    <string name="menu_feedback">Góp ý</string>
+    <string name="menu_rate_us">Đánh giá 5 sao</string>
+    <string name="menu_about_us">Về chúng tôi</string>
+    <string name="menu_privacy_policy">Chính sách bảo mật</string>
+    <string name="menu_service_policy">Điều khoản dịch vụ</string>
+    <string name="menu_about_ads">Giới thiệu quảng cáo</string>
+
+    <!-- Wallpapers -->
+    <string name="select_wallpaper">Chọn Hình Nền</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_opening_search">Đang mở tìm kiếm...</string>
+    <string name="toast_cannot_open_app">Không thể mở ứng dụng này!</string>
+    <string name="toast_bg_updated">Đã cập nhật hình nền!</string>
+    <string name="toast_select_launcher">Vui lòng chọn launcher của chúng tôi trong danh sách để kích hoạt!</string>
+    <string name="toast_feedback_coming">Tính năng phản hồi sắp ra mắt!</string>
+    <string name="toast_thanks_rating">Cảm ơn bạn đã đánh giá 5 sao!</string>
+    <string name="toast_about_app">Ứng dụng mô phỏng Rolling Icons. Phiên bản 1.0</string>
+    <string name="toast_about_ads">Ứng dụng hoàn toàn miễn phí và không gây phiền hà!</string>
+    <string name="toast_no_browser">Không tìm thấy trình duyệt web!</string>
+    <string name="toast_select_one_app">Vui lòng chọn ít nhất 1 ứng dụng!</string>
+    <string name="toast_apply_wallpaper_tip">Vui lòng nhấn \'Cài Đặt Hình Nền\' để áp dụng chế độ hình nền động!</string>
+    <string name="toast_unsupported_wallpaper">Thiết bị không hỗ trợ hình nền động!</string>
+
+    <string name="toast_select_language_continue">Vui lòng chọn ngôn ngữ để tiếp tục</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_hindi">हिन्दी</string>
+    <string name="language_indonesian">Bahasa Indonesia</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_vietnamese">Tiếng Việt</string>
+    <string name="language_japanese">日本語</string>
+
+    <string name="splash_ads_warning">Quảng cáo sẽ sớm tải, vui lòng chờ trong giây lát…</string>
+    <string name="intro_slide_1_title">Làm Màn Hình Chính Rực Rỡ</string>
+    <string name="intro_slide_1_des">Thêm biểu tượng động độc đáo tạo phong cách sinh động riêng biệt.</string>
+    <string name="intro_slide_2_title">Chuyển Động Theo Phong Cách Bạn</string>
+    <string name="intro_slide_2_des">Lựa chọn nhiều hiệu ứng chuyển động mượt mà và thú vị.</string>
+    <string name="intro_slide_3_title">Trải Nghiệm Biểu Tượng 3D</string>
+    <string name="intro_slide_3_des">Thêm chiều sâu không gian 3D ấn tượng vào màn hình của bạn.</string>
+    <string name="intro_slide_4_title">Hoàn Thiện Giao Diện</string>
+    <string name="intro_slide_4_des">Kết hợp biểu tượng động cùng hình nền đẹp mắt hoàn hảo.</string>
+    <string name="intro_next">Tiếp theo</string>
+
+    <!-- Newly Extracted UI Strings -->
+    <string name="btn_retry">Thử lại</string>
+    <string name="select_display_mode">Chọn Chế Độ Hiển Thị</string>
+    <string name="live_wallpaper_mode">Chế Độ Hình Nền Động</string>
+    <string name="btn_apply">Áp dụng</string>
+    <string name="btn_get_started">Bắt đầu  ➔</string>
+    <string name="photos_from_gallery">Ảnh từ thư viện của bạn</string>
+    <string name="select_picture_title">Chọn Hình Ảnh</string>
+    <string name="tab_all_photo">Tất cả ảnh</string>
+    <string name="tab_folder">Thư mục</string>
+    <string name="selected_files_zero">Đã chọn: 0 Tệp</string>
+    <string name="selected_files_format">Đã chọn: %d Tệp</string>
+    <string name="selected_files_count_only_format">%1$d Tệp</string>
+    <string name="btn_next_arrow">Tiếp theo ➔</string>
+    <string name="btn_save">Lưu</string>
+    <string name="dialog_set_wallpaper_as_title">Đặt Hình Nền Thành</string>
+    <string name="btn_set_wallpaper">Đặt Hình Nền</string>
+
+    <!-- Additional Toast & Dynamic Strings -->
+    <string name="toast_select_wallpaper_first">Vui lòng chọn hình nền trước</string>
+    <string name="toast_wallpaper_updated_rolling">Đã cập nhật hình nền cho Rolling Icons!</string>
+    <string name="toast_wallpaper_set_success">Cài đặt hình nền thành công!</string>
+    <string name="toast_wallpaper_updated">Đã cập nhật hình nền!</string>
+    <string name="toast_change_default_home">Vui lòng thay đổi ứng dụng Màn hình chính mặc định để thoát</string>
+    <!-- Delete Photo Dialog -->
+    <string name="delete_photo_title">Xóa hình ảnh</string>
+    <string name="delete_photo_message">Bạn có chắc chắn muốn xóa hình ảnh này không?</string>
+    <string name="btn_delete">Xóa</string>
+    <!-- Loading Dialog -->
+    <string name="loading_ads">Đang tải, vui lòng chờ…</string>
+
+    <!-- Layout Extracted Strings -->
+    <string name="customize_setting">Cài Đặt Tùy Chỉnh</string>
+    <string name="live_wallpaper_mode_desc">Các ứng dụng và ảnh đã chọn sẽ cuộn xoay làm hình nền động phía sau màn hình chính của bạn</string>
+    <string name="home_launcher_mode">Chế Độ Màn Hình Chính Launcher</string>
+    <string name="home_launcher_mode_desc">Thay thế hoàn toàn màn hình chính bằng giao diện icon vật lý tương tác và ngăn ứng dụng.</string>
+    <string name="physics_wallpaper_settings">Cài Đặt Hình Nền Vật Lý</string>
+    <string name="icon_size">Kích Thước Biểu Tượng</string>
+    <string name="set_as_default_home">Đặt làm màn hình chính mặc định</string>
+    <string name="touch_interaction">Tương Tác Chạm</string>
+    <string name="touch_interaction_desc">Cho phép chạm tương tác vào các biểu tượng đang cuộn trên hình nền</string>
+    <string name="enable_float_button_title">Bật nút nổi?</string>
+    <string name="float_button_subdesc">Nút nổi hỗ trợ nhanh của Launcher</string>
+    <string name="launcher_settings">Cài Đặt Launcher</string>
+    <string name="floating_button">Nút Nổi</string>
+    <string name="support_information">Thông Tin Hỗ Trợ</string>
+    <string name="version">Phiên bản</string>
+    <string name="shape_crown">Vương Miện</string>
+    <string name="shape_diamond">Kim Cương</string>
+    <string name="home_screen">Màn Hình Chính</string>
+    <string name="home_screen_desc">Đặt làm hình nền cho màn hình chính</string>
+    <string name="lock_screen">Màn Hình Khóa</string>
+    <string name="lock_screen_desc">Đặt làm hình nền cho màn hình khóa</string>
+    <string name="lock_home_screen">Màn Hình Khóa &amp; Chính</string>
+    <string name="lock_home_screen_desc">Đặt hình nền cho cả hai màn hình</string>
+    <string name="no_internet_or_wallpapers">Không có kết nối internet hoặc không tìm thấy hình nền</string>
+    <string name="tab_wallpaper">Hình nền</string>
+    <string name="tab_live_wallpaper">Hình nền động</string>
+    <string name="tab_live">Live</string>
+    <string name="tab_static">Static</string>
+    <string name="category_all">Tất cả</string>
+    <string name="live_wallpaper_coming_soon">Tính năng hình nền động sắp ra mắt!</string>
+    <string name="search_apps_hint">Tìm kiếm ứng dụng...</string>
+    <string name="prepare_rolling">Đang chuẩn bị...</string>
+    <string name="toast_video_not_available">Video không khả dụng</string>
+    <string name="toast_failed_prepare_video">Không thể chuẩn bị video hình nền</string>
+</resources>

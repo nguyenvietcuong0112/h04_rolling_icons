@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Dashed Butterfly Path representing Shape Map -->
+    <path
+        android:strokeColor="#C85C32"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M 24 20 C 20 10, 10 10, 14 20 C 10 26, 20 30, 24 24 C 28 30, 38 26, 34 20 C 38 10, 28 10, 24 20 Z M 24 20 L 21 10 M 24 20 L 27 10" />
+
+</vector>

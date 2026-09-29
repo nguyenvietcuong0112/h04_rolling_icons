@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="inter_splash_high" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="inter_splash" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="native_splash_full_high" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_splash_full" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="banner_splash" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="native_language_high" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_language" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_language_high_click" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_language_click" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+
+
+    <string name="native_onboarding_1" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_onboarding_2" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_onboarding_3" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_onboarding_full_1" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_onboarding_full_2" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_onboarding_4" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+
+
+    <string name="inter_click" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="native_all" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_home" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+
+    <string name="banner_collap_home" translatable="false">ca-app-pub-3940256099942544/2014213617</string>
+    <string name="banner_collap_preview" translatable="false">ca-app-pub-3940256099942544/2014213617</string>
+
+    <string name="resume_open_app" translatable="false">ca-app-pub-3940256099942544/9257395921</string>
+
+    <string name="inter_set_wallpaper" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="facebook_app_id" translatable="false">1234</string>
+    <string name="facebook_client_token" translatable="false">5678</string>
+
+
+
+</resources>
