@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.iconchanger.rollingicons.app-mergeDebugResources-86:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\cuong\\.gradle\\caches\\9.7.0\\transforms\\f98c94aaeb4038872d46a2744a943370\\transformed\\appcompat-1.8.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

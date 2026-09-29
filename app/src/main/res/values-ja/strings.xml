@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rolling Icon: Live Wallpaper</string>
+    <string name="wallpaper_label">Rolling Icons ライブ壁紙</string>
+    <string name="wallpaper_description">重力に従って動くリアルな3Dアプリアイコンをシミュレートするライブ壁紙。</string>
+    <string name="settings_label">Rolling Icons 設定</string>
+
+    <!-- MainActivity -->
+    <string name="title_3d_custom_icons">3D ローリングアイコン</string>
+    <string name="rolling_icon_title">ローリングアイコン</string>
+    <string name="rolling_icon_desc">アイコンにローリングアニメーションを追加</string>
+    <string name="btn_start">スタート</string>
+    <string name="spinning_icon_title">スピニングアイコン</string>
+    <string name="spinning_icon_desc">アイコンを連続して回転させます</string>
+    <string name="shape_path_title">ハートアイコン</string>
+    <string name="shape_path_desc">生き生きとしたアイコンのための心臓の鼓動アニメーション</string>
+    <string name="emoji_icon_title">絵文字アイコン</string>
+    <string name="emoji_icon_desc">アクティブな絵文字を管理</string>
+    <string name="photo_icon_title">写真アイコン</string>
+    <string name="photo_icon_desc">アクティブな写真を管理</string>
+    <string name="wallpaper_title">ライブ壁紙</string>
+    <string name="wallpaper_desc">静止画 / ライブ壁紙を設定</string>
+
+    <!-- Launcher & Game -->
+    <string name="score_format">スコア: %d</string>
+    <string name="score_0">スコア: 0</string>
+    <string name="exit_game">ゲームを終了</string>
+    <string name="exit_launcher">ランチャーを終了</string>
+    <string name="all_applications">すべてのアプリ</string>
+    <string name="exit_title">アプリを終了</string>
+    <string name="exit_message">アプリを終了してもよろしいですか？</string>
+    <string name="btn_exit">終了</string>
+    <string name="btn_next">次へ</string>
+    <string name="btn_cancel">キャンセル</string>
+
+    <!-- Selection Activities -->
+    <string name="configure_icons">アイコン設定</string>
+    <string name="configure_path_icons">パスアイコンの設定</string>
+    <string name="selected_label">選択済み:</string>
+    <string name="photos_count_format">%d 枚の写真</string>
+    <string name="zero_photos">0 枚の写真</string>
+    <string name="btn_continue">次へ</string>
+    <string name="permission_title">権限</string>
+    <string name="permission_photo_title">写真へのアクセスを許可</string>
+    <string name="permission_photo_desc">自分の写真や壁紙を使用して、スタイルに合ったユニークな3Dローリングアイコンテーマを作成できます。</string>
+    <string name="tab_apps">アプリ</string>
+    <string name="tab_emoji">絵文字</string>
+    <string name="tab_photos">写真</string>
+
+    <!-- Shape Path Selector -->
+    <string name="select_shape_path">シェイプパスを選択</string>
+    <string name="select_shape_desc">アイコンが動くパスを選択してください:</string>
+    <string name="shape_heart">ハート</string>
+    <string name="shape_infinity">無限</string>
+    <string name="shape_star">星</string>
+    <string name="shape_flower">花</string>
+    <string name="shape_clover">四つ葉のクローバー</string>
+    <string name="shape_butterfly">蝶</string>
+
+    <!-- Spinning Styles -->
+    <string name="spinning_style_title">回転スタイル</string>
+    <string name="select_spinning_style">回転スタイルを選択</string>
+    <string name="single_circle_title">シングルサークル</string>
+    <string name="single_circle_desc">すべてのアイコンが大きな1つの円で回転します</string>
+    <string name="dual_circle_title">デュアルサークル</string>
+    <string name="dual_circle_desc">逆方向に回転する二重の円</string>
+    <string name="vortex_spiral_title">ボルテックススパイラル</string>
+    <string name="vortex_spiral_desc">アイコンが渦巻き状に回転します</string>
+    <string name="selected_count_format">%2$d 件中 %1$d 件選択</string>
+
+    <!-- Settings Activity -->
+    <string name="settings_title">設定</string>
+    <string name="make_it_launcher">デフォルトのホームアプリに設定しますか？</string>
+    <string name="size_small">小</string>
+    <string name="size_middle">中</string>
+    <string name="size_large">大</string>
+    <string name="select_bg_image">背景画像を選択</string>
+    <string name="select_bg_image_desc">背景用のカスタム画像を選択</string>
+    <string name="bg_default">デフォルト</string>
+    <string name="bg_custom_image">カスタム画像</string>
+    <string name="enable_float_button">フローティングボタンを有効化？</string>
+    <string name="float_button_desc">ランチャーのフローティングボタン</string>
+    <string name="enable_wallpaper_touch">壁紙のタッチ操作を有効化？</string>
+    <string name="menu_feedback">フィードバック</string>
+    <string name="menu_rate_us">評価する</string>
+    <string name="menu_about_us">アプリについて</string>
+    <string name="menu_privacy_policy">プライバシーポリシー</string>
+    <string name="menu_service_policy">利用規約</string>
+    <string name="menu_about_ads">広告について</string>
+
+    <!-- Wallpapers -->
+    <string name="select_wallpaper">壁紙を選択</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_opening_search">検索を開いています...</string>
+    <string name="toast_cannot_open_app">このアプリを開けません！</string>
+    <string name="toast_bg_updated">背景画像を更新しました！</string>
+    <string name="toast_select_launcher">有効にするにはリストからランチャーを選択してください！</string>
+    <string name="toast_feedback_coming">フィードバック機能は近日公開予定です！</string>
+    <string name="toast_thanks_rating">星5つの評価をありがとうございます！</string>
+    <string name="toast_about_app">Rolling Icons シミュレーションアプリ。バージョン 1.0</string>
+    <string name="toast_about_ads">アプリは完全無料です！</string>
+    <string name="toast_no_browser">Webブラウザがインストールされていません！</string>
+    <string name="toast_select_one_app">少なくとも1つのアプリを選択してください！</string>
+    <string name="toast_apply_wallpaper_tip">\'壁紙を設定\'をクリックしてライブ壁紙モードを適用してください！</string>
+    <string name="toast_unsupported_wallpaper">この端末はライブ壁紙に対応していません！</string>
+
+    <string name="toast_select_language_continue">続行するには言語を選択してください</string>
+    <string name="language">言語</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_hindi">हिन्दी</string>
+    <string name="language_indonesian">Bahasa Indonesia</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_vietnamese">Tiếng Việt</string>
+    <string name="language_japanese">日本語</string>
+
+    <string name="splash_ads_warning">広告がまもなく読み込まれます。しばらくお待ちください…</string>
+    <string name="intro_slide_1_title">ホーム画面を華やかに</string>
+    <string name="intro_slide_1_des">美しいアニメーションアイコンを追加して、ユニークな画面を作成しましょう。</string>
+    <string name="intro_slide_2_title">スタイルに合わせた動き</string>
+    <string name="intro_slide_2_des">滑らかなアニメーションでアイコンを生き生きとさせます。</string>
+    <string name="intro_slide_3_title">アイコンを3Dに</string>
+    <string name="intro_slide_3_des">ホーム画面に素晴らしい奥行きを追加します。</string>
+    <string name="intro_slide_4_title">スタイルを完成させる</string>
+    <string name="intro_slide_4_des">アニメーションアイコンと美しい壁紙を組み合わせましょう。</string>
+    <string name="intro_next">次へ</string>
+
+    <!-- Newly Extracted UI Strings -->
+    <string name="btn_retry">再試行</string>
+    <string name="select_display_mode">表示モードを選択</string>
+    <string name="live_wallpaper_mode">ライブ壁紙モード</string>
+    <string name="btn_apply">適用</string>
+    <string name="btn_get_started">スタート  ➔</string>
+    <string name="photos_from_gallery">ギャラリーからの写真</string>
+    <string name="select_picture_title">写真を選択</string>
+    <string name="tab_all_photo">すべての写真</string>
+    <string name="selected_files_zero">選択済み: 0 ファイル</string>
+    <string name="selected_files_format">選択済み: %d ファイル</string>
+    <string name="selected_files_count_only_format">%1$d ファイル</string>
+    <string name="toast_max_item_limit">最大%1$d個まで選択できます</string>
+    <string name="btn_go_home">ホームへ</string>
+    <string name="success_title">完了！</string>
+    <string name="success_desc">ローリングアイコンテーマと背景が設定されました</string>
+    <string name="btn_save">保存</string>
+    <string name="dialog_set_wallpaper_as_title">壁紙を次として設定</string>
+    <string name="btn_set_wallpaper">壁紙を設定</string>
+
+    <!-- Additional Toast & Dynamic Strings -->
+    <string name="toast_select_wallpaper_first">最初に壁紙を選択してください</string>
+    <string name="toast_wallpaper_updated_rolling">Rolling Icons の壁紙を更新しました！</string>
+    <string name="toast_wallpaper_set_success">壁紙の設定に成功しました！</string>
+    <string name="toast_wallpaper_updated">壁紙を更新しました！</string>
+    <string name="toast_change_default_home">終了するにはデフォルトのホームアプリを変更してください</string>
+    <!-- Delete Photo Dialog -->
+    <string name="delete_photo_title">写真を削除</string>
+    <string name="delete_photo_message">この写真を削除してもよろしいですか？</string>
+    <string name="btn_delete">削除</string>
+    <!-- Loading Dialog -->
+    <string name="loading_ads">読み込み中、お待ちください…</string>
+
+    <!-- Layout Extracted Strings -->
+    <string name="customize_setting">設定のカスタマイズ</string>
+    <string name="live_wallpaper_mode_desc">選択したアプリや写真がライブ壁紙として回転・移動します</string>
+    <string name="home_launcher_mode">ホームランチャーモード</string>
+    <string name="home_launcher_mode_desc">ホーム画面をインタラクティブな物理アイコンデスクトップに完全に置き換えます。</string>
+    <string name="physics_wallpaper_settings">物理壁紙の設定</string>
+    <string name="icon_size">アイコンサイズ</string>
+    <string name="set_as_default_home">デフォルトのホーム画面に設定</string>
+    <string name="touch_interaction">タッチ操作</string>
+    <string name="touch_interaction_desc">壁紙上の転がるアイコンのタップを許可</string>
+    <string name="enable_float_button_title">フローティングボタンを有効化?</string>
+    <string name="float_button_subdesc">ランチャーのフローティングボタン</string>
+    <string name="launcher_settings">ランチャー設定</string>
+    <string name="floating_button">フローティングボタン</string>
+    <string name="support_information">サポート情報</string>
+    <string name="version">バージョン</string>
+    <string name="shape_crown">王冠</string>
+    <string name="shape_diamond">ダイヤモンド</string>
+    <string name="home_screen">ホーム画面</string>
+    <string name="home_screen_desc">ホーム画面の壁紙として設定</string>
+    <string name="lock_screen">ロック画面</string>
+    <string name="lock_screen_desc">ロック画面の壁紙として設定</string>
+    <string name="lock_home_screen">ロック＆ホーム画面</string>
+    <string name="lock_home_screen_desc">両方の画面の壁紙に設定</string>
+    <string name="no_internet_or_wallpapers">インターネット接続がないか、壁紙が見つかりません</string>
+    <string name="btn_ok">OK</string>
+    <string name="tab_folder">フォルダー</string>
+    <string name="btn_next_arrow">次へ ➔</string>
+    <string name="tab_wallpaper">壁紙</string>
+    <string name="tab_live_wallpaper">ライブ壁紙</string>
+    <string name="tab_live">Live</string>
+    <string name="tab_static">Static</string>
+    <string name="category_all">すべて</string>
+    <string name="live_wallpaper_coming_soon">ライブ壁紙は近日公開予定です！</string>
+    <string name="search_apps_hint">アプリを検索...</string>
+    <string name="prepare_rolling">準備中...</string>
+    <string name="toast_video_not_available">動画は利用できません</string>
+    <string name="toast_failed_prepare_video">壁紙動画の準備に失敗しました</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_rounded"
+    android:padding="20dp"
+    android:layout_margin="16dp">
+
+    <!-- Top Right Close Button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="@color/cosmic_text_primary"
+            android:clickable="true"
+            android:focusable="true" />
+    </RelativeLayout>
+
+    <!-- Header Binding Preview Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Selected Emoji Preview Box -->
+        <FrameLayout
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_card_selected"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/imgEmojiPreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+        </FrameLayout>
+
+        <!-- Swap Arrows Icon -->
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginHorizontal="16dp"
+            android:src="@drawable/ic_swap_arrows" />
+
+        <!-- Linked App Preview Box -->
+        <FrameLayout
+            android:id="@+id/layoutAppPreview"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_dashed_purple_box"
+            android:padding="6dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/imgAppPreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/imgPlusPlaceholder"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@android:drawable/ic_input_add"
+                app:tint="@color/cosmic_accent" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- Installed Apps Grid -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/appsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <!-- Save Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/btn_save"
+        android:textColor="@color/cosmic_white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_purple_gradient_btn"
+        android:stateListAnimator="@null"
+        android:fontFamily="@font/app_font" />
+
+</LinearLayout>

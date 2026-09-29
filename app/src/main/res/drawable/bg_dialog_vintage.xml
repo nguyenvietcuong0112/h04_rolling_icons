@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Warm vintage cream/sand background color -->
+    <solid android:color="#FFFFFF" />
+    
+    <!-- Bold hand-drawn style dark brown border -->
+    <stroke
+        android:width="3dp"
+        android:color="#FFFFFF" />
+    
+    <!-- Large cartoonish rounded corners -->
+    <corners android:radius="24dp" />
+</shape>

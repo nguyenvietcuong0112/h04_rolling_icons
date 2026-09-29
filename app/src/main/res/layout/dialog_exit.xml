@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_margin="16dp"
+    android:background="@drawable/bg_dialog_vintage"
+    android:gravity="center">
+
+    <!-- Dialog Title -->
+    <TextView
+        android:id="@+id/txtDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exit_title"
+        android:textColor="#2E1C0C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="@font/app_font" />
+
+    <!-- Dialog Message -->
+    <TextView
+        android:id="@+id/txtDialogMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exit_message"
+        android:textColor="#2E1C0C"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/app_font" />
+
+    <!-- Buttons Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Cancel Button (Vintage white button with dark brown border) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDialogCancel"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:text="@string/btn_cancel"
+            android:textColor="#7A3CFA"
+            android:gravity="center"
+            android:background="@drawable/bg_vintage_button_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_font" />
+
+        <!-- Confirm Exit Button (Vintage terracotta button) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDialogExit"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:text="@string/btn_exit"
+            android:textColor="@color/cosmic_white"
+            android:background="@drawable/bg_purple_gradient_btn"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_font" />
+    </LinearLayout>
+
+</LinearLayout>
+

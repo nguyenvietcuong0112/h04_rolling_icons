@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="20dp"
+    android:viewportWidth="30"
+    android:viewportHeight="20">
+    <!-- Saffron -->
+    <path
+        android:fillColor="#FF9933"
+        android:pathData="M0,0h30v6.67h-30z"/>
+    <!-- White -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,6.67h30v6.67h-30z"/>
+    <!-- Green -->
+    <path
+        android:fillColor="#138808"
+        android:pathData="M0,13.34h30v6.66h-30z"/>
+    <!-- Ashoka Chakra (Simplified blue circle) -->
+    <path
+        android:fillColor="#000080"
+        android:pathData="M15,10m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0"/>
+</vector>

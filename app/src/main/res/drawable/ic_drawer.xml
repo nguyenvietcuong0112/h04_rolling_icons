@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Premium vintage outer circle frame with cream fill and thick dark brown border -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#944AF6"
+        android:strokeWidth="1.5"
+        android:pathData="M 12 2 C 6.48 2, 2 6.48, 2 12 C 2 17.52, 6.48 22, 12 22 C 17.52 22, 22 17.52, 22 12 C 22 6.48, 17.52 2, 12 2 Z" />
+
+    <!-- 9 cute terracotta rounded dots representing the drawer grid -->
+    <path
+        android:fillColor="#944AF6"
+        android:pathData="M 8,8 m -1.2,0 a 1.2,1.2 0 1,1 2.4,0 a 1.2,1.2 0 1,1 -2.4,0 M 12,8 m -1.2,0 a 1.2,1.2 0 1,1 2.4,0 a 1.2,1.2 0 1,1 -2.4,0 M 16,8 m -1.2,0 a 1.2,1.2 0 1,1 2.4,0 a 1.2,1.2 0 1,1 -2.4,0 M 8,12 m -1.2,0 a 1.2,1.2 0 1,1 2.4,0 a 1.2,1.2 0 1,1 -2.4,0 M 12,12 m -1.2,0 a 1.2,1.2 0 1,1 2.4,0 a 1.2,1.2 0 1,1 -2.4,0 M 16,12 m -1.2,0 a 1.2,1.2 0 1,1 2.4,0 a 1.2,1.2 0 1,1 -2.4,0 M 8,16 m -1.2,0 a 1.2,1.2 0 1,1 2.4,0 a 1.2,1.2 0 1,1 -2.4,0 M 12,16 m -1.2,0 a 1.2,1.2 0 1,1 2.4,0 a 1.2,1.2 0 1,1 -2.4,0 M 16,16 m -1.2,0 a 1.2,1.2 0 1,1 2.4,0 a 1.2,1.2 0 1,1 -2.4,0" />
+
+</vector>

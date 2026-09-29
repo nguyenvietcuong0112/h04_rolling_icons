@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="20dp"
+    android:viewportWidth="30"
+    android:viewportHeight="20">
+    <!-- Red Background -->
+    <path
+        android:fillColor="#B22234"
+        android:pathData="M0,0h30v20h-30z"/>
+    <!-- White Stripes -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,1.53h30v1.53h-30z M0,4.61h30v1.54h-30z M0,7.69h30v1.54h-30z M0,10.77h30v1.54h-30z M0,13.85h30v1.54h-30z M0,16.92h30v1.54h-30z"/>
+    <!-- Blue Canton -->
+    <path
+        android:fillColor="#3C3B6E"
+        android:pathData="M0,0h13v10.77h-13z"/>
+    <!-- Stars (Simplified white dots) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M2,2m-0.5,0a0.5,0.5 0,1 1,1 0a0.5,0.5 0,1 1,-1 0 M5,2m-0.5,0a0.5,0.5 0,1 1,1 0a0.5,0.5 0,1 1,-1 0 M8,2m-0.5,0a0.5,0.5 0,1 1,1 0a0.5,0.5 0,1 1,-1 0 M11,2m-0.5,0a0.5,0.5 0,1 1,1 0a0.5,0.5 0,1 1,-1 0 M3.5,4m-0.5,0a0.5,0.5 0,1 1,1 0a0.5,0.5 0,1 1,-1 0 M6.5,4m-0.5,0a0.5,0.5 0,1 1,1 0a0.5,0.5 0,1 1,-1 0 M9.5,4m-0.5,0a0.5,0.5 0,1 1,1 0a0.5,0.5 0,1 1,-1 0 M2,6m-0.5,0a0.5,0.5 0,1 1,1 0a0.5,0.5 0,1 1,-1 0 M5,6m-0.5,0a0.5,0.5 0,1 1,1 0a0.5,0.5 0,1 1,-1 0 M8,6m-0.5,0a0.5,0.5 0,1 1,1 0a0.5,0.5 0,1 1,-1 0 M11,6m-0.5,0a0.5,0.5 0,1 1,1 0a0.5,0.5 0,1 1,-1 0 M3.5,8m-0.5,0a0.5,0.5 0,1 1,1 0a0.5,0.5 0,1 1,-1 0 M6.5,8m-0.5,0a0.5,0.5 0,1 1,1 0a0.5,0.5 0,1 1,-1 0 M9.5,8m-0.5,0a0.5,0.5 0,1 1,1 0a0.5,0.5 0,1 1,-1 0"/>
+</vector>

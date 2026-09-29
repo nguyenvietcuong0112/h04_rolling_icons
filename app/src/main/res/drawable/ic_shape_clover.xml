@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Dashed Clover Path representing Shape Map -->
+    <path
+        android:strokeColor="#C85C32"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M 24 24 C 24 12, 12 12, 24 24 C 24 36, 36 36, 24 24 C 36 24, 36 12, 24 24 C 12 24, 12 36, 24 24 Z M 24 24 L 20 40" />
+
+</vector>

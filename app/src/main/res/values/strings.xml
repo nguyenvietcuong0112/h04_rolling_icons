@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rolling Icon: Live Wallpaper</string>
+    <string name="wallpaper_label">Rolling Icons Live Wallpaper</string>
+    <string name="wallpaper_description">Live wallpaper simulating realistic 3D physical app icons moving with gravity.</string>
+    <string name="settings_label">Rolling Icons Settings</string>
+
+
+    <!-- MainActivity -->
+    <string name="title_3d_custom_icons">3D Rolling Icon</string>
+    <string name="rolling_icon_title">Rolling Icon</string>
+    <string name="rolling_icon_desc">Rolling animation to your Icons</string>
+    <string name="btn_start">Start</string>
+    <string name="spinning_icon_title">Spinning Icon</string>
+    <string name="spinning_icon_desc">Make your icons spin continuously</string>
+    <string name="shape_path_title">Hearting Icon</string>
+    <string name="shape_path_desc">Heartbeat animation for lively icons</string>
+    <string name="emoji_icon_title">Emoji Icon</string>
+    <string name="emoji_icon_desc">Manage active emojis</string>
+    <string name="photo_icon_title">Photo Icon</string>
+    <string name="photo_icon_desc">Manage active photos</string>
+    <string name="wallpaper_title">Live Wallpaper</string>
+    <string name="wallpaper_desc">Set static / live wallpaper</string>
+
+    <!-- Launcher & Game -->
+    <string name="score_format">Score: %d</string>
+    <string name="score_0">Score: 0</string>
+    <string name="exit_game">Exit Game</string>
+    <string name="exit_launcher">Exit Launcher</string>
+    <string name="all_applications">ALL APPLICATIONS</string>
+    <string name="exit_title">Exit Application</string>
+    <string name="exit_message">Are you sure you want to exit the app?</string>
+    <string name="btn_exit">Exit</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_cancel">Cancel</string>
+
+
+    <!-- Selection Activities -->
+    <string name="configure_icons">Icon Settings</string>
+    <string name="configure_path_icons">Configure Path Icons</string>
+    <string name="selected_label">Selected:</string>
+    <string name="photos_count_format">%d photos</string>
+    <string name="zero_photos">0 photos</string>
+    <string name="btn_continue">Continue</string>
+    <!-- Permission Activity -->
+    <string name="permission_title">Permission</string>
+    <string name="permission_photo_title">Allow Photo Access</string>
+    <string name="permission_photo_desc">Use your own photos and wallpapers to create unique 3D rolling icon themes that match your style.</string>
+    <string name="tab_apps">Apps</string>
+    <string name="tab_emoji">Emoji</string>
+    <string name="tab_photos">Photos</string>
+
+    <!-- Shape Path Selector -->
+    <string name="select_shape_path">Select Shape Path</string>
+    <string name="select_shape_desc">Select a path for the icons to move along:</string>
+    <string name="shape_heart">Heart</string>
+    <string name="shape_infinity">Infinity</string>
+    <string name="shape_star">Star</string>
+    <string name="shape_flower">Flower</string>
+    <string name="shape_clover">Four-leaf Clover</string>
+    <string name="shape_butterfly">Butterfly</string>
+
+    <!-- Spinning Styles -->
+    <string name="spinning_style_title">Spinning Style</string>
+    <string name="select_spinning_style">Select Spinning Style</string>
+    <string name="single_circle_title">Single Circle</string>
+    <string name="single_circle_desc">All icons spin in a single large circle</string>
+    <string name="dual_circle_title">Dual Circle</string>
+    <string name="dual_circle_desc">Concentric circles rotating opposite directions</string>
+    <string name="vortex_spiral_title">Vortex Spiral</string>
+    <string name="vortex_spiral_desc">Icons spin in a swirling vortex spiral pattern</string>
+    <string name="selected_count_format">Selected %1$d of %2$d</string>
+    <string name="toast_max_item_limit">Maximum %1$d items allowed</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_go_home">Go home</string>
+    <string name="success_title">Success!</string>
+    <string name="success_desc">Your rolling icon theme and background are set</string>
+
+    <!-- Settings Activity -->
+    <string name="settings_title">Settings</string>
+    <string name="make_it_launcher">Make it as launcher??</string>
+    <string name="size_small">small</string>
+    <string name="size_middle">middle</string>
+    <string name="size_large">large</string>
+    <string name="select_bg_image">Select background image</string>
+    <string name="select_bg_image_desc">Choose a custom image for background</string>
+    <string name="bg_default">default</string>
+    <string name="bg_custom_image">Custom Image</string>
+    <string name="enable_float_button">Enable float button??</string>
+    <string name="float_button_desc">Launcher\'s float button</string>
+    <string name="enable_wallpaper_touch">Enable wallpaper touch?</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_rate_us">Rate us</string>
+    <string name="menu_about_us">About us</string>
+    <string name="menu_privacy_policy">Privacy policy</string>
+    <string name="menu_service_policy">Service policy</string>
+    <string name="menu_about_ads">About Ads</string>
+
+    <!-- Wallpapers -->
+    <string name="select_wallpaper">Select Wallpaper</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_opening_search">Opening search...</string>
+    <string name="toast_cannot_open_app">Cannot open this application!</string>
+    <string name="toast_bg_updated">Background image updated!</string>
+    <string name="toast_select_launcher">Please select our launcher from the list to activate!</string>
+    <string name="toast_feedback_coming">Feedback feature is coming soon!</string>
+    <string name="toast_thanks_rating">Thank you for rating us 5 stars!</string>
+    <string name="toast_about_app">Rolling Icons simulation app. Version 1.0</string>
+    <string name="toast_about_ads">The app is completely free and contains no annoying ads!</string>
+    <string name="toast_no_browser">No web browser installed!</string>
+    <string name="toast_select_one_app">Please select at least 1 app!</string>
+    <string name="toast_apply_wallpaper_tip">Please click \'Set Wallpaper\' to apply the live wallpaper mode!</string>
+    <string name="toast_unsupported_wallpaper">This device does not support live wallpapers!</string>
+
+    <string name="toast_select_language_continue">Please select a language to continue</string>
+    <string name="language">Language</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_hindi">हिन्दी</string>
+    <string name="language_indonesian">Bahasa Indonesia</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_vietnamese">Tiếng Việt</string>
+    <string name="language_japanese">日本語</string>
+
+    <string name="splash_ads_warning">Ads may load shortly, please wait…</string>
+    <string name="intro_slide_1_title">Make Your Home Screen Shine</string>
+    <string name="intro_slide_1_des">Add beautiful animated icons to create a unique and lively look.</string>
+    <string name="intro_slide_2_title">Motion That Matches Your Style</string>
+    <string name="intro_slide_2_des">Choose from smooth, playful animations to make every icon feel alive.</string>
+    <string name="intro_slide_3_title">Bring Icons Into 3D</string>
+    <string name="intro_slide_3_des">Add stunning depth and smooth 3D effects to your home screen.</string>
+    <string name="intro_slide_4_title">Complete the Look</string>
+    <string name="intro_slide_4_des">Match your animated icons with beautiful wallpapers for a seamless style.</string>
+    <string name="intro_next">Next</string>
+
+    <!-- Newly Extracted UI Strings -->
+    <string name="btn_retry">Retry</string>
+    <string name="select_display_mode">Select Display Mode</string>
+    <string name="live_wallpaper_mode">Live Wallpaper Mode</string>
+    <string name="btn_apply">Apply</string>
+    <string name="btn_get_started">Get started  ➔</string>
+    <string name="photos_from_gallery">Photos from your gallery</string>
+    <string name="select_picture_title">Select Picture</string>
+    <string name="tab_all_photo">All Photo</string>
+    <string name="tab_folder">Folder</string>
+    <string name="selected_files_zero">Selected: 0 Files</string>
+    <string name="selected_files_format">Selected: %d Files</string>
+    <string name="selected_files_count_only_format">%1$d Files</string>
+    <string name="btn_next_arrow">Next ➔</string>
+    <string name="btn_save">Save</string>
+    <string name="dialog_set_wallpaper_as_title">Set Wallpaper AS</string>
+    <string name="btn_set_wallpaper">Set Wallpaper</string>
+
+    <!-- Additional Toast & Dynamic Strings -->
+    <string name="toast_select_wallpaper_first">Please select a wallpaper first</string>
+    <string name="toast_wallpaper_updated_rolling">Wallpaper updated for Rolling Icons!</string>
+    <string name="toast_wallpaper_set_success">Wallpaper set successfully!</string>
+    <string name="toast_wallpaper_updated">Wallpaper updated!</string>
+    <string name="toast_change_default_home">Please change default Home app to exit</string>
+    <!-- Delete Photo Dialog -->
+    <string name="delete_photo_title">Delete Photo</string>
+    <string name="delete_photo_message">Are you sure you want to remove this photo?</string>
+    <string name="btn_delete">Delete</string>
+    <!-- Loading Dialog -->
+    <string name="loading_ads">Loading, please wait…</string>
+
+    <!-- Layout Extracted Strings -->
+    <string name="customize_setting">Customize Setting</string>
+    <string name="live_wallpaper_mode_desc">Your selected apps and photo will roll and tumble as a live wallpaper behind your system home screen</string>
+    <string name="home_launcher_mode">Home Launcher Mode</string>
+    <string name="home_launcher_mode_desc">Fully replace your system home screen with an interactive physics icon desktop and app drawer.</string>
+    <string name="physics_wallpaper_settings">Physics Wallpaper Settings</string>
+    <string name="set_as_default_home">Set as default home screen</string>
+    <string name="touch_interaction">Touch Interaction</string>
+    <string name="touch_interaction_desc">Allow clicking on rolling icons on the wallpaper</string>
+    <string name="enable_float_button_title">Enable float button?</string>
+    <string name="float_button_subdesc">Launcher\'s float button</string>
+    <string name="launcher_settings">Launcher Settings</string>
+    <string name="floating_button">Floating Button</string>
+    <string name="support_information">Support Information</string>
+    <string name="version">Version</string>
+    <string name="shape_crown">Crown</string>
+    <string name="shape_diamond">Diamond</string>
+    <string name="home_screen">Home Screen</string>
+    <string name="home_screen_desc">Set as wallpaper for home screen</string>
+    <string name="lock_screen">Lock Screen</string>
+    <string name="lock_screen_desc">Set as wallpaper for lock screen</string>
+    <string name="lock_home_screen">Lock &amp; Home Screen</string>
+    <string name="lock_home_screen_desc">Set Wallpaper for both screen</string>
+    <string name="no_internet_or_wallpapers">No internet connection or wallpapers found</string>
+    <string name="tab_wallpaper">Wallpaper</string>
+    <string name="tab_live_wallpaper">Live Wallpaper</string>
+    <string name="tab_live">Live</string>
+    <string name="tab_static">Static</string>
+    <string name="category_all">All</string>
+    <string name="live_wallpaper_coming_soon">Live Wallpaper is coming soon!</string>
+    <string name="icon_size">Icon size</string>
+    <string name="search_apps_hint">Search apps...</string>
+    <string name="prepare_rolling">Prepare rolling...</string>
+    <string name="toast_video_not_available">Video not available</string>
+    <string name="toast_failed_prepare_video">Failed to prepare wallpaper video</string>
+</resources>

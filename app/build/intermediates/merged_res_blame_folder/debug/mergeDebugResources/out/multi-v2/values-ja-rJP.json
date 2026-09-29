@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.iconchanger.rollingicons.app-mergeDebugResources-86:/values-ja-rJP/values-ja-rJP.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\cuong\\.gradle\\caches\\9.7.0\\transforms\\6f6f00553152650f75a323b9ceb49b52\\transformed\\mbridge_android_sdk-17.1.71\\res\\values-ja-rJP\\values-ja-rJP.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,116",
+                        "endColumns": "60,63",
+                        "endOffsets": "111,175"
+                    }
+                }
+            ]
+        }
+    ]
+}
