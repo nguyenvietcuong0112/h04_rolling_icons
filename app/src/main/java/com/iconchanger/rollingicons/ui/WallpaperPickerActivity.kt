@@ -89,7 +89,18 @@ class WallpaperPickerActivity : BaseActivity() {
                             Toast.makeText(this@WallpaperPickerActivity, getString(R.string.toast_bg_updated), Toast.LENGTH_SHORT).show()
                             finish()
                         } else {
-                            openLiveWallpaperPreview()
+                            val wallpaperInfo = WallpaperManager.getInstance(this@WallpaperPickerActivity).wallpaperInfo
+                            val isApplied = wallpaperInfo?.packageName == packageName
+                            if (isApplied) {
+                                Toast.makeText(this@WallpaperPickerActivity, getString(R.string.toast_wallpaper_updated_rolling), Toast.LENGTH_SHORT).show()
+                                val intent = Intent(this@WallpaperPickerActivity, SuccessActivity::class.java).apply {
+                                    flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
+                                }
+                                startActivity(intent)
+                                finish()
+                            } else {
+                                openLiveWallpaperPreview()
+                            }
                         }
                     }
                 }

@@ -34,18 +34,6 @@
                 android:resource="@xml/wallpaper" />
         </service>
 
-        <service
-            android:name=".wallpaper.VideoWallpaperService"
-            android:label="@string/tab_live_wallpaper"
-            android:permission="android.permission.BIND_WALLPAPER"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.service.wallpaper.WallpaperService" />
-            </intent-filter>
-            <meta-data
-                android:name="android.service.wallpaper"
-                android:resource="@xml/video_wallpaper" />
-        </service>
 
         <activity
             android:name=".ui.MainActivity"
@@ -54,11 +42,6 @@
             android:theme="@style/AppTheme.MainActivity"
             android:exported="true"/>
 
-        <activity
-            android:name=".ui.FirstOpenWallpaperActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.FirstOpen"
-            android:exported="false" />
 
         <activity
             android:name=".ui.PermissionActivity"
@@ -84,35 +67,6 @@
             android:screenOrientation="portrait"
             android:exported="false" />
 
-        <activity
-            android:name=".ui.ApiWallpaperActivity"
-            android:label="Online Wallpapers"
-            android:screenOrientation="portrait"
-            android:exported="false" />
-
-        <activity
-            android:name=".ui.ApiWallpaperDetailActivity"
-            android:label="Wallpaper Detail"
-            android:screenOrientation="portrait"
-            android:exported="false" />
-
-        <activity
-            android:name=".ui.ApiWallpaperPreviewActivity"
-            android:label="Wallpaper Preview"
-            android:screenOrientation="portrait"
-            android:exported="false" />
-
-        <activity
-            android:name=".ui.LiveWallpaperDetailActivity"
-            android:label="Live Wallpaper Detail"
-            android:screenOrientation="portrait"
-            android:exported="false" />
-
-        <activity
-            android:name=".ui.LiveWallpaperPreviewActivity"
-            android:label="Live Wallpaper Preview"
-            android:screenOrientation="portrait"
-            android:exported="false" />
 
         <activity
             android:name=".ui.SettingsActivity"

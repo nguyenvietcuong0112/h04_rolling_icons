@@ -17,7 +17,6 @@ import com.mobi.libraryads.data.OnActivityCallBack
 import com.mobi.libraryads.data.UiLanguageConfig
 import com.mobi.libraryads.data.UiOBConfig
 import com.mobi.libraryads.data.UiSplashConfig
-import com.iconchanger.rollingicons.ui.FirstOpenWallpaperActivity
 import com.iconchanger.rollingicons.ui.MainActivity
 import com.iconchanger.rollingicons.ui.PermissionActivity
 import com.iconchanger.rollingicons.utils.EnumSelectLanguage
@@ -58,15 +57,13 @@ class App : Application() {
         val adsLibrary = AdsApplication(this, RemoteConfigs, BuildConfig.DEBUG)
         val isOrganic = SharePreferenceUtils.isOrganic(this)
 
-
-
         adsLibrary.initSdk(
             adjustAppToken = "",
             gsmAppId = "",
             splashConfig = SplashConfig(
                 uiSplashConfig = UiSplashConfig(
                     resLayout = R.layout.activity_splash,
-                    showFOForever = true,
+                    showFOForever = false,
                     homeActivity = MainActivity::class.java,
                     timeout = 30_000
                 ),
@@ -125,17 +122,10 @@ class App : Application() {
                                 if (!savedLang.isNullOrBlank()) {
                                     SystemUtil.changeLang(savedLang, activity)
                                 }
-                                if (inSession2) {
-                                    val intent = Intent(activity, PermissionActivity::class.java).apply {
-                                        addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                                    }
-                                    activity.startActivity(intent)
-                                } else {
-                                    val intent = Intent(activity, FirstOpenWallpaperActivity::class.java).apply {
-                                        addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                                    }
-                                    activity.startActivity(intent)
+                                val intent = Intent(activity, MainActivity::class.java).apply {
+                                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
                                 }
+                                activity.startActivity(intent)
                             }
                         },
 //                        nextOBActivity = PermissionActivity::class.java

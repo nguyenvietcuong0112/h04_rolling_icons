@@ -27,6 +27,8 @@ class MainActivity : BaseActivity() {
             layoutLoadingOverlay.visibility = View.GONE
         }, 2000)
 
+        initDefaultSettingsIfNeeded()
+
         // 1. Nút Settings góc trên bên phải trên header (Không hiện Inter)
         findViewById<ImageView>(R.id.btnHeaderSettings).setOnClickListener {
             val intent = Intent(this, SettingsActivity::class.java)
@@ -98,10 +100,12 @@ class MainActivity : BaseActivity() {
             }
         }
 
-        // 7. Click vào thẻ Wallpaper -> Mở ApiWallpaperActivity (Online API Mode)
+        // 7. Click vào thẻ Wallpaper -> Mở WallpaperPickerActivity (Local Wallpapers)
         findViewById<View>(R.id.cardWallpaper).setOnClickListener {
             AdsConfig.showInterClickAd(this, it) {
-                val intent = Intent(this, ApiWallpaperActivity::class.java)
+                val intent = Intent(this, WallpaperPickerActivity::class.java).apply {
+                    putExtra("mode", "rolling")
+                }
                 startActivity(intent)
             }
         }
@@ -179,6 +183,22 @@ class MainActivity : BaseActivity() {
             activeExitDialog = null
         }
         dialog.show()
+    }
+
+    private fun initDefaultSettingsIfNeeded() {
+        lifecycleScope.launch(kotlinx.coroutines.Dispatchers.IO) {
+            val appRepository = com.iconchanger.rollingicons.data.AppRepository(this@MainActivity)
+            val preferenceRepository = com.iconchanger.rollingicons.data.PreferenceRepository(this@MainActivity)
+
+            appRepository.getSelectedApps()
+
+            if (preferenceRepository.getBgImagePath().isEmpty()) {
+                val defaultWallpaperUri = "android.resource://$packageName/${R.drawable.bg_wallpaper_00}"
+                preferenceRepository.setBgImagePath(defaultWallpaperUri)
+                preferenceRepository.setBgType(2)
+                preferenceRepository.setWallpaperMode("rolling")
+            }
+        }
     }
 }
 
