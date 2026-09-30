@@ -14,6 +14,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import com.google.android.material.card.MaterialCardView
 import com.iconchanger.rollingicons.R
 import com.iconchanger.rollingicons.data.PreferenceRepository
@@ -28,13 +29,54 @@ class WallpaperPickerActivity : BaseActivity() {
     private lateinit var preferenceRepository: PreferenceRepository
     private val scope = CoroutineScope(Dispatchers.Main)
 
-    private lateinit var recyclerView: RecyclerView
+    private lateinit var wallpaperRecyclerView: RecyclerView
     private lateinit var btnApply: Button
     private var wallpaperMode = "rolling" // "rolling", "spinning", or "shape_path"
     private var selectedPosition = 0
 
-    // List of local wallpaper drawables
+    // List of 30 High-Quality WebP Wallpapers + Classic Wallpapers
     private val wallpapers = listOf(
+        // Space
+        R.drawable.bg_wp_space_01,
+        R.drawable.bg_wp_space_02,
+        R.drawable.bg_wp_space_03,
+        // Anime
+        R.drawable.bg_wp_anime_01,
+        R.drawable.bg_wp_anime_02,
+        R.drawable.bg_wp_anime_03,
+        // Neon
+        R.drawable.bg_wp_neon_01,
+        R.drawable.bg_wp_neon_02,
+        R.drawable.bg_wp_neon_03,
+        // Nature
+        R.drawable.bg_wp_nature_01,
+        R.drawable.bg_wp_nature_02,
+        R.drawable.bg_wp_nature_03,
+        // Aesthetic
+        R.drawable.bg_wp_aesthetic_01,
+        R.drawable.bg_wp_aesthetic_02,
+        R.drawable.bg_wp_aesthetic_03,
+        // Abstract
+        R.drawable.bg_wp_abstract_01,
+        R.drawable.bg_wp_abstract_02,
+        R.drawable.bg_wp_abstract_03,
+        // Cute
+        R.drawable.bg_wp_cute_01,
+        R.drawable.bg_wp_cute_02,
+        R.drawable.bg_wp_cute_03,
+        // Animal
+        R.drawable.bg_wp_animal_01,
+        R.drawable.bg_wp_animal_02,
+        R.drawable.bg_wp_animal_03,
+        // City
+        R.drawable.bg_wp_city_01,
+        R.drawable.bg_wp_city_02,
+        R.drawable.bg_wp_city_03,
+        // Fantasy
+        R.drawable.bg_wp_fantasy_01,
+        R.drawable.bg_wp_fantasy_02,
+        R.drawable.bg_wp_fantasy_03,
+        // Classic
         R.drawable.bg_wallpaper_00,
         R.drawable.bg_wallpaper_01,
         R.drawable.bg_wallpaper_02,
@@ -46,6 +88,8 @@ class WallpaperPickerActivity : BaseActivity() {
         R.drawable.bg_wallpaper_08
     )
 
+    private lateinit var wallpaperAdapter: WallpaperAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wallpaper_picker)
@@ -53,12 +97,12 @@ class WallpaperPickerActivity : BaseActivity() {
         preferenceRepository = PreferenceRepository(this)
         wallpaperMode = intent.getStringExtra("mode") ?: "rolling"
 
-        recyclerView = findViewById(R.id.wallpaperRecyclerView)
+        wallpaperRecyclerView = findViewById(R.id.wallpaperRecyclerView)
         btnApply = findViewById(R.id.btnApply)
 
-        recyclerView.layoutManager = GridLayoutManager(this, 3)
-        val adapter = WallpaperAdapter()
-        recyclerView.adapter = adapter
+        wallpaperRecyclerView.layoutManager = GridLayoutManager(this, 3)
+        wallpaperAdapter = WallpaperAdapter()
+        wallpaperRecyclerView.adapter = wallpaperAdapter
 
         findViewById<ImageView>(R.id.btnBack).setOnClickListener {
             finish()
@@ -150,6 +194,7 @@ class WallpaperPickerActivity : BaseActivity() {
         }
     }
 
+    // Wallpaper Grid Adapter
     private inner class WallpaperAdapter : RecyclerView.Adapter<WallpaperAdapter.ViewHolder>() {
 
         inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -165,7 +210,11 @@ class WallpaperPickerActivity : BaseActivity() {
 
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             val resId = wallpapers[position]
-            holder.imgView.setImageResource(resId)
+
+            // Load thumbnail using Coil with crossfade
+            holder.imgView.load(resId) {
+                crossfade(true)
+            }
 
             val isSelected = position == selectedPosition
             if (isSelected) {
