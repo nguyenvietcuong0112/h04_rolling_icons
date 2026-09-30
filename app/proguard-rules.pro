@@ -73,11 +73,14 @@
 # Ads & Mediation SDKs (Google Mobile Ads, Meta, AppLovin, InMobi, Pangle, etc.)
 # ============================================================================
 
-# Google Mobile Ads
+# Google Mobile Ads (GMA Next-Gen & Legacy)
+-keep class com.google.android.libraries.ads.mobile.sdk.** { *; }
+-dontwarn com.google.android.libraries.ads.mobile.sdk.**
 -keep class com.google.android.gms.ads.** { *; }
 -dontwarn com.google.android.gms.ads.**
 
-# CSC Ads library
+# Mobi / CSC Ads library
+-keep class com.mobi.libraryads.** { *; }
 -keep class com.app.library.** { *; }
 -keep class com.app.** { *; }
 

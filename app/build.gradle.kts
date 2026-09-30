@@ -131,7 +131,6 @@ dependencies {
 
     // Firebase
     implementation(platform("com.google.firebase:firebase-bom:34.16.0"))
-    implementation("com.google.android.gms:play-services-ads")
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-crashlytics")
     implementation("com.google.firebase:firebase-database")
@@ -142,7 +141,7 @@ dependencies {
 
 
     //lib ads
-    implementation("com.app:library-ads:0.0.1")
+    implementation("com.app:library-ads:0.0.3")
 
     // sdk mediation
     implementation("com.facebook.android:facebook-android-sdk:18.3.0")
@@ -183,6 +182,12 @@ tasks.register("copyAndroidNatives") {
 
 tasks.matching { it.name.contains("merge") && it.name.contains("JniLibFolders") }.configureEach {
     dependsOn("copyAndroidNatives")
+}
+configurations.configureEach {
+    exclude(group = "com.google.android.gms", module = "play-services-ads")
+    exclude(group = "com.google.android.gms", module = "play-services-ads-lite")
+    exclude(group = "com.google.android.gms", module = "play-services-ads-base")
+    exclude(group = "com.google.android.gms", module = "play-services-ads-api")
 }
 
 

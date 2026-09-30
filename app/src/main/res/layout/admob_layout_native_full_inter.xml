@@ -15,7 +15,7 @@
     </FrameLayout>
 
 
-    <com.google.android.gms.ads.nativead.NativeAdView
+    <com.google.android.libraries.ads.mobile.sdk.nativead.NativeAdView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/native_ad_view"
@@ -42,7 +42,7 @@
                 android:visibility="invisible"
                 />
 
-            <com.google.android.gms.ads.nativead.MediaView
+            <com.google.android.libraries.ads.mobile.sdk.nativead.MediaView
                 android:id="@+id/media_view"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -104,6 +104,6 @@
                 android:layout_marginBottom="@dimen/_30sdp"
                 />
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.gms.ads.nativead.NativeAdView>
+    </com.google.android.libraries.ads.mobile.sdk.nativead.NativeAdView>
 
 </FrameLayout>

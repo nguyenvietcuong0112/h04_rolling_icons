@@ -15,7 +15,7 @@
         <include layout="@layout/ads_shimmer_native_media" />
     </com.facebook.shimmer.ShimmerFrameLayout>
 
-    <com.google.android.gms.ads.nativead.NativeAdView
+    <com.google.android.libraries.ads.mobile.sdk.nativead.NativeAdView
         android:id="@+id/native_ad_view"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <com.google.android.gms.ads.nativead.MediaView
+                <com.google.android.libraries.ads.mobile.sdk.nativead.MediaView
                     android:id="@+id/media_view"
                     android:layout_width="fill_parent"
                     android:layout_height="150dp"
@@ -121,5 +121,5 @@
         </RelativeLayout>
 
 
-    </com.google.android.gms.ads.nativead.NativeAdView>
+    </com.google.android.libraries.ads.mobile.sdk.nativead.NativeAdView>
 </FrameLayout>
