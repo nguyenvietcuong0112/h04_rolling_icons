@@ -148,7 +148,23 @@ class ShapeSelectionActivity : BaseActivity() {
         val singleMode = intent.getBooleanExtra("single_mode", false)
 
         val txtHeaderTitle = findViewById<TextView>(R.id.txtHeaderTitle)
-        txtHeaderTitle.text = getString(R.string.shape_path_title)
+        scope.launch {
+            val currentShape = preferenceRepository.getShapePathType()
+            val shapeTitle = when (currentShape) {
+                "heart" -> getString(R.string.shape_heart)
+                "infinity" -> getString(R.string.shape_infinity)
+                "star" -> getString(R.string.shape_star)
+                "flower" -> getString(R.string.shape_flower)
+                "clover" -> getString(R.string.shape_clover)
+                "butterfly" -> getString(R.string.shape_butterfly)
+                "crown" -> getString(R.string.shape_crown)
+                "diamond" -> getString(R.string.shape_diamond)
+                else -> getString(R.string.shape_3d_icon_title)
+            }
+            if (!singleMode) {
+                txtHeaderTitle.text = shapeTitle
+            }
+        }
 
         // Bind layouts
         tabLayout = findViewById(R.id.tabLayout)

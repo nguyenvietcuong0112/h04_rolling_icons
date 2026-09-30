@@ -124,7 +124,7 @@ class SettingsActivity : BaseActivity() {
         }
 
         findViewById<View>(R.id.btnPrivacyPolicy)?.setOnClickListener {
-            openWebPage("https://docs.google.com/document/d/1JUD-uBWf7Nd-aGjyydJVwrg4nJOwW5XT")
+            openWebPage("")
         }
 
         findViewById<View>(R.id.btnAboutUs)?.setOnClickListener {

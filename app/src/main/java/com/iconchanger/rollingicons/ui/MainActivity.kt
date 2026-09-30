@@ -51,64 +51,31 @@ class MainActivity : BaseActivity() {
             }
         }
 
-        // 3. Click vào thẻ Spinning Icon hoặc nút Get Started của Spinning Icon
-        val cardSpinningIcon = findViewById<View>(R.id.cardSpinningIcon)
-        val btnGetStartedSpinning = findViewById<TextView>(R.id.btnGetStartedSpinning)
-        cardSpinningIcon.setOnClickListener {
-            AdsConfig.showInterClickAd(this, it) {
+        // 3. Click vào thẻ 3D Spinning & Orbit Icons hoặc nút Get Started
+        val cardSpinning3DIcon = findViewById<View>(R.id.cardSpinning3DIcon)
+        val btnGetStartedSpinning3D = findViewById<TextView>(R.id.btnGetStartedSpinning3D)
+        val openSpinning3DAction: (View) -> Unit = { v ->
+            AdsConfig.showInterClickAd(this, v) {
                 val intent = Intent(this, SpinningIconActivity::class.java)
                 startActivity(intent)
             }
         }
-        btnGetStartedSpinning.setOnClickListener {
-            AdsConfig.showInterClickAd(this, it) {
-                val intent = Intent(this, SpinningIconActivity::class.java)
-                startActivity(intent)
-            }
-        }
+        cardSpinning3DIcon?.setOnClickListener { openSpinning3DAction(it) }
+        btnGetStartedSpinning3D?.setOnClickListener { openSpinning3DAction(it) }
 
-        // 4. Click vào thẻ Hearting Icon (chạy trực tiếp Heart Path)
-        findViewById<View>(R.id.cardShapePathIcon).setOnClickListener {
-            AdsConfig.showInterClickAd(this, it) {
-                lifecycleScope.launch {
-                    com.iconchanger.rollingicons.data.PreferenceRepository(this@MainActivity).setShapePathType("heart")
-                    val intent = Intent(this@MainActivity, ShapeSelectionActivity::class.java)
-                    startActivity(intent)
-                }
-            }
-        }
-
-        // 5. Click vào thẻ Emoji Icon
-        findViewById<View>(R.id.cardEmojiIcon).setOnClickListener {
-            AdsConfig.showInterClickAd(this, it) {
-                val intent = Intent(this, RollingSelectionActivity::class.java).apply {
-                    putExtra("default_tab", 1)
-                    putExtra("single_mode", true)
-                }
-                startActivity(intent)
-            }
-        }
-
-        // 6. Click vào thẻ Photo Icon
-        findViewById<View>(R.id.cardPhotoIcon).setOnClickListener {
-            AdsConfig.showInterClickAd(this, it) {
-                val intent = Intent(this, RollingSelectionActivity::class.java).apply {
-                    putExtra("default_tab", 2)
-                    putExtra("single_mode", true)
-                }
-                startActivity(intent)
-            }
-        }
-
-        // 7. Click vào thẻ Wallpaper -> Mở WallpaperPickerActivity (Local Wallpapers)
-        findViewById<View>(R.id.cardWallpaper).setOnClickListener {
-            AdsConfig.showInterClickAd(this, it) {
+        // 4. Click vào thẻ Live Wallpaper hoặc nút Get Started của Live Wallpaper
+        val cardLiveWallpaper = findViewById<View>(R.id.cardLiveWallpaper)
+        val btnGetStartedWallpaper = findViewById<TextView>(R.id.btnGetStartedWallpaper)
+        val openWallpaperAction: (View) -> Unit = { v ->
+            AdsConfig.showInterClickAd(this, v) {
                 val intent = Intent(this, WallpaperPickerActivity::class.java).apply {
                     putExtra("mode", "rolling")
                 }
                 startActivity(intent)
             }
         }
+        cardLiveWallpaper?.setOnClickListener { openWallpaperAction(it) }
+        btnGetStartedWallpaper?.setOnClickListener { openWallpaperAction(it) }
 
         // Xử lý nút Back hiển thị Popup xác nhận thoát ứng dụng
         onBackPressedDispatcher.addCallback(this, object : androidx.activity.OnBackPressedCallback(true) {

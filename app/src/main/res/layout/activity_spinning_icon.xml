@@ -1,234 +1,569 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cosmic_background"
     android:fitsSystemWindows="false"
     android:orientation="vertical">
 
-    <!-- Top Bar -->
+    <!-- Top Bar with Tabs -->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_100"
+        android:layout_height="@dimen/dp_125"
         android:background="@drawable/bg_header"
-        android:paddingTop="@dimen/dp_24"
-        android:paddingHorizontal="16dp">
+        android:paddingTop="24dp">
 
-        <ImageView
-            android:id="@+id/btnBack"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:clickable="true"
-            android:focusable="true"
-            android:src="@drawable/ic_arrow_back" />
+        <!-- Title Bar -->
+        <RelativeLayout
+            android:id="@+id/layoutTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingHorizontal="16dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:fontFamily="@font/app_font"
-            android:text="@string/spinning_style_title"
-            android:textColor="@color/cosmic_white"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:id="@+id/txtHeaderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/app_font"
+                android:text="@string/title_spinning_3d_selector"
+                android:textColor="@color/cosmic_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- Main Tabs -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_below="@id/layoutTitleBar"
+            android:background="@android:color/transparent"
+            android:layout_marginHorizontal="@dimen/dp_40"
+            app:tabTextColor="#B4A6FF"
+            app:tabSelectedTextColor="@color/cosmic_white"
+            app:tabIndicatorColor="@color/cosmic_white"
+            app:tabIndicatorHeight="4dp"
+            app:tabIndicator="@drawable/bg_tab_indicator"
+            app:tabIndicatorFullWidth="false"
+            app:tabTextAppearance="@style/CustomTabTextAppearance"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabRippleColor="#20FFFFFF" />
     </RelativeLayout>
 
-    <!-- Style Selector List -->
-    <ScrollView
+    <!-- Content Containers for Tabs -->
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:fillViewport="true"
-        android:descendantFocusability="beforeDescendants"
-        android:scrollbars="none">
+        android:layout_weight="1">
 
-        <LinearLayout
+        <!-- Tab 0: 3D Shapes (8 options) -->
+        <ScrollView
+            android:id="@+id/layoutTab3DShapes"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
             android:descendantFocusability="beforeDescendants"
-            android:padding="16dp">
+            android:scrollbars="none"
+            android:visibility="visible">
 
-            <RelativeLayout
-                android:id="@+id/cardSingleCircle"
+            <GridLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/dp_125"
-                android:background="@drawable/bg_card_border"
-                android:layout_marginBottom="16dp"
-                android:padding="12dp">
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="4"
+                android:descendantFocusability="beforeDescendants"
+                android:padding="8dp">
 
-
-                <ImageView
-                    android:id="@+id/imgCard1"
-                    android:layout_width="@dimen/dp_100"
-                    android:layout_height="@dimen/dp_100"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/img_spinning_single_circle" />
-
-                <!-- Arrow Chevron -->
-                <ImageView
-                    android:id="@+id/arrow1"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/ic_arrow_forward"
-                    />
-
-                <!-- Texts -->
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <!-- Card 1: Hearting -->
+                <FrameLayout
+                    android:id="@+id/cardHeart"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="12dp"
-                    android:layout_toLeftOf="@id/arrow1"
-                    android:layout_toRightOf="@id/imgCard1"
-                    android:orientation="vertical">
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/bg_card_border"
+                    android:clickable="true"
+                    android:focusable="true">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/app_font"
-                        android:text="@string/single_circle_title"
-                        android:textColor="#2E1C0C"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="12dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:ellipsize="end"
-                        android:fontFamily="@font/app_font"
-                        android:maxLines="3"
-                        android:text="@string/single_circle_desc"
-                        android:textColor="#4E3629"
-                        android:textSize="11sp" />
-                </LinearLayout>
-            </RelativeLayout>
+                        <ImageView
+                            android:layout_width="@dimen/dp_120"
+                            android:layout_height="@dimen/dp_120"
+                            android:src="@drawable/ic_shape_heart" />
 
-            <RelativeLayout
-                android:id="@+id/cardDualCircle"
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shape_heart"
+                            android:textColor="@color/cosmic_text_primary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/app_font" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <!-- Card 2: Infinity -->
+                <FrameLayout
+                    android:id="@+id/cardInfinity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/bg_card_border"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_120"
+                            android:layout_height="@dimen/dp_120"
+                            android:src="@drawable/ic_shape_infinity" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shape_infinity"
+                            android:textColor="@color/cosmic_text_primary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/app_font" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <!-- Card 3: Star -->
+                <FrameLayout
+                    android:id="@+id/cardStar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/bg_card_border"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_120"
+                            android:layout_height="@dimen/dp_120"
+                            android:src="@drawable/ic_star" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shape_star"
+                            android:textColor="@color/cosmic_text_primary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/app_font" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <!-- Card 4: Crown -->
+                <FrameLayout
+                    android:id="@+id/cardCrown"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/bg_card_border"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_120"
+                            android:layout_height="@dimen/dp_120"
+                            android:src="@drawable/ic_crown" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shape_crown"
+                            android:textColor="@color/cosmic_text_primary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/app_font" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <!-- Card 5: Flower -->
+                <FrameLayout
+                    android:id="@+id/cardFlower"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/bg_card_border"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_120"
+                            android:layout_height="@dimen/dp_120"
+                            android:src="@drawable/ic_shape_flower" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shape_flower"
+                            android:textColor="@color/cosmic_text_primary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/app_font" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <!-- Card 6: Clover -->
+                <FrameLayout
+                    android:id="@+id/cardClover"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/bg_card_border"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_120"
+                            android:layout_height="@dimen/dp_120"
+                            android:src="@drawable/ic_shape_clover" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shape_clover"
+                            android:textColor="@color/cosmic_text_primary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/app_font" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <!-- Card 7: Butterfly -->
+                <FrameLayout
+                    android:id="@+id/cardButterfly"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/bg_card_border"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_120"
+                            android:layout_height="@dimen/dp_120"
+                            android:src="@drawable/ic_shape_butterfly" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shape_butterfly"
+                            android:textColor="@color/cosmic_text_primary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/app_font" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <!-- Card 8: Diamond -->
+                <FrameLayout
+                    android:id="@+id/cardDiamond"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/bg_card_border"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_120"
+                            android:layout_height="@dimen/dp_120"
+                            android:src="@drawable/ic_shape_diamond" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shape_diamond"
+                            android:textColor="@color/cosmic_text_primary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/app_font" />
+                    </LinearLayout>
+                </FrameLayout>
+
+            </GridLayout>
+        </ScrollView>
+
+        <!-- Tab 1: Spinning Styles (3 options) -->
+        <ScrollView
+            android:id="@+id/layoutTabSpinning"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:descendantFocusability="beforeDescendants"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/dp_125"
-                android:background="@drawable/bg_card_border"
-                android:layout_marginBottom="16dp"
-                android:padding="12dp">
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:descendantFocusability="beforeDescendants"
+                android:padding="16dp">
 
-                <ImageView
-                    android:id="@+id/imgCard2"
-                    android:layout_width="@dimen/dp_100"
-                    android:layout_height="@dimen/dp_100"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/img_spinning_dual_circle" />
-
-                <!-- Arrow Chevron -->
-                <ImageView
-                    android:id="@+id/arrow2"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/ic_arrow_forward"
-                    />
-
-                <!-- Texts -->
-                <LinearLayout
+                <!-- Spinning Option 1: Single Circle -->
+                <RelativeLayout
+                    android:id="@+id/cardSingleCircle"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="12dp"
-                    android:layout_toLeftOf="@id/arrow2"
-                    android:layout_toRightOf="@id/imgCard2"
-                    android:orientation="vertical">
+                    android:layout_height="@dimen/dp_125"
+                    android:background="@drawable/bg_card_border"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="12dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <ImageView
+                        android:id="@+id/imgCard1"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_100"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_spinning_single_circle" />
+
+                    <ImageView
+                        android:id="@+id/arrow1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_forward" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/app_font"
-                        android:text="@string/dual_circle_title"
-                        android:textColor="#2E1C0C"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toLeftOf="@id/arrow1"
+                        android:layout_toRightOf="@id/imgCard1"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:ellipsize="end"
-                        android:fontFamily="@font/app_font"
-                        android:maxLines="3"
-                        android:text="@string/dual_circle_desc"
-                        android:textColor="#4E3629"
-                        android:textSize="11sp" />
-                </LinearLayout>
-            </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/app_font"
+                            android:text="@string/single_circle_title"
+                            android:textColor="#2E1C0C"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
 
-            <RelativeLayout
-                android:id="@+id/cardVortex"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dp_125"
-                android:background="@drawable/bg_card_border"
-                android:padding="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/app_font"
+                            android:maxLines="3"
+                            android:text="@string/single_circle_desc"
+                            android:textColor="#4E3629"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </RelativeLayout>
 
-
-                <ImageView
-                    android:id="@+id/imgCard3"
-                    android:layout_width="@dimen/dp_100"
-                    android:layout_height="@dimen/dp_100"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/img_spinning_vortex" />
-
-                <!-- Arrow Chevron -->
-                <ImageView
-                    android:id="@+id/arrow3"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/ic_arrow_forward"
-                    />
-
-                <!-- Texts -->
-                <LinearLayout
+                <!-- Spinning Option 2: Dual Circle -->
+                <RelativeLayout
+                    android:id="@+id/cardDualCircle"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="12dp"
-                    android:layout_toLeftOf="@id/arrow3"
-                    android:layout_toRightOf="@id/imgCard3"
-                    android:orientation="vertical">
+                    android:layout_height="@dimen/dp_125"
+                    android:background="@drawable/bg_card_border"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="12dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <ImageView
+                        android:id="@+id/imgCard2"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_100"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_spinning_dual_circle" />
+
+                    <ImageView
+                        android:id="@+id/arrow2"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_forward" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/app_font"
-                        android:text="@string/vortex_spiral_title"
-                        android:textColor="#2E1C0C"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toLeftOf="@id/arrow2"
+                        android:layout_toRightOf="@id/imgCard2"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/app_font"
+                            android:text="@string/dual_circle_title"
+                            android:textColor="#2E1C0C"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/app_font"
+                            android:maxLines="3"
+                            android:text="@string/dual_circle_desc"
+                            android:textColor="#4E3629"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- Spinning Option 3: Vortex Spiral -->
+                <RelativeLayout
+                    android:id="@+id/cardVortex"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_125"
+                    android:background="@drawable/bg_card_border"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgCard3"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_100"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_spinning_vortex" />
+
+                    <ImageView
+                        android:id="@+id/arrow3"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_forward" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:ellipsize="end"
-                        android:fontFamily="@font/app_font"
-                        android:maxLines="3"
-                        android:text="@string/vortex_spiral_desc"
-                        android:textColor="#4E3629"
-                        android:textSize="11sp" />
-                </LinearLayout>
-            </RelativeLayout>
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toLeftOf="@id/arrow3"
+                        android:layout_toRightOf="@id/imgCard3"
+                        android:orientation="vertical">
 
-        </LinearLayout>
-    </ScrollView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/app_font"
+                            android:text="@string/vortex_spiral_title"
+                            android:textColor="#2E1C0C"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/app_font"
+                            android:maxLines="3"
+                            android:text="@string/vortex_spiral_desc"
+                            android:textColor="#4E3629"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
 
     <!-- Bottom Native Ad Container -->
     <FrameLayout
